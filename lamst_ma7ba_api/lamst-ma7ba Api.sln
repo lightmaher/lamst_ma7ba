@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lamst-ma7ba Api", "lamst-ma7ba Api.csproj", "{1F99E77D-CA43-484A-9A1E-A754A0D2E2CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F99E77D-CA43-484A-9A1E-A754A0D2E2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F99E77D-CA43-484A-9A1E-A754A0D2E2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F99E77D-CA43-484A-9A1E-A754A0D2E2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F99E77D-CA43-484A-9A1E-A754A0D2E2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EEC3311-E457-4441-81C2-87E44DDD0B72}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+<div class="container">
+    <div>
+        <div class="row" style="direction: rtl;">
+            <app-event *ngFor="let item of events" [evt]="item"></app-event>
+        </div>
+
+        <a routerLink="/addevent" class="btn btn-light mt-3"> Add new Event </a>
+    </div>
+</div>
