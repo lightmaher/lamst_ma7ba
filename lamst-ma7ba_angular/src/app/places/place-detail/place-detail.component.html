@@ -1,0 +1,19 @@
+<div class="mt-4" >
+     <h1 class="text-center">{{place.title}}</h1>
+     <hr>
+     </div>
+     <div class="row mt-5">
+         <div class="col-md-4">
+            <img [src]="createImgPath(place.url)" class="mx-auto d-block img-fluid" 
+             alt="profile picture" height="400" style="max-width: 100%;">
+         </div>
+         <div class="col-md-8">
+            <p class="card-text bold">{{place.description}}</p>
+            <button class="btn btn-outline-primary mr-2"
+             type="button" (click)="EditPlaceClick(place.id)">تعديل</button>
+             <button class="btn btn-danger mr-2" 
+             (click)="ondelete(place.id)">حذف</button>
+
+             <!--
+            <button class="btn btn-outline-danger" *ngIf="isAdmin()" type="button" (click)="onDelete(product.productId)">  Delete </button>   -->           
+</div>

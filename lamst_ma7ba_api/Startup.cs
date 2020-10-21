@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using lamst_ma7ba_Api.Models;
+using lamst_ma7ba_Api.Repository.PlaceRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -40,6 +41,7 @@ namespace lamst_ma7ba_Api
             services.AddControllers();
             services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("conn")));
             services.AddScoped<IRepEvent, RepEvent>();
+            services.AddScoped<IPlaceRepo , PlaceRepo>();
             services.AddCors();
 
 
