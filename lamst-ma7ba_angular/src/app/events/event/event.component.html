@@ -1,0 +1,10 @@
+<div class="card w-350 mr-2 mt-2" style="width: 18rem;">
+    <img class="card-img-top" [src]="createImgPath(evt.url)" alt="Card image cap">
+    <div class="card-body">
+        <h3 class="card-title">{{evt.title}}</h3>
+        <h5> {{evt.location}} </h5>
+        <p class="card-text">{{evt.description}}</p>
+        <a (click)="delete(evt.id)" class="btn btn-primary">Delete</a>
+
+    </div>
+</div>

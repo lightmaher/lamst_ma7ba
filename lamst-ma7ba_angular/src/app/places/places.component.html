@@ -1,0 +1,7 @@
+<button type="button" routerLink="/add-place" class="btn btn-primary mt-3">Add Place</button>
+
+<div class="row" style="direction: rtl;">
+    <div class="col-md-3">
+        <app-place *ngFor="let plc of places" [place]="plc"></app-place>
+    </div>
+</div>

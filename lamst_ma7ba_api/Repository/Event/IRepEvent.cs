@@ -1,0 +1,20 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace lamst_ma7ba_Api.Models
+{
+  public interface IRepEvent
+    {
+        public Task< IList<Event>> GetAllEvents();
+        public Task<Event> GetEvent(int id);
+
+        public Task AddEvent(Event Event);
+
+        public Task DeleteEvent(int id);
+        public Task UpdateEvent(int id ,Event evt1);
+        public Boolean isexist(int id);
+    }
+}

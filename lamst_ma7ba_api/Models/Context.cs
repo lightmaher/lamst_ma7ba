@@ -1,0 +1,21 @@
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace lamst_ma7ba_Api.Models
+{
+    public class Context : IdentityDbContext<Admin>
+    {
+        public Context(DbContextOptions<Context> option) :
+            base(option)
+        {
+        }
+        public DbSet<Event> Events { get; set; }
+        public DbSet<Place> places{ get; set; }
+
+    }
+    }
