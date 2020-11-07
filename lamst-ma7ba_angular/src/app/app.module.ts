@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -16,7 +17,12 @@ import { PlacesComponent } from './places/places.component';
 import { PlaceAddComponent } from './places/place-add/place-add.component';
 import { PlaceDetailComponent } from './places/place-detail/place-detail.component';
 import { PlaceComponent } from './places/place/place.component';
+import { AccountComponent } from './account/account.component';
+import {JwtModule} from '@auth0/angular-jwt';
 
+export function tokenGetter() {
+  return localStorage.getItem('token');
+}
 
 @NgModule({
   declarations: [
@@ -30,14 +36,24 @@ import { PlaceComponent } from './places/place/place.component';
     PlacesComponent,
     PlaceAddComponent,
     PlaceDetailComponent,
-    PlaceComponent
+    PlaceComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    JwtModule.forRoot({
+      config: {
+        // tslint:disable-next-line:object-literal-shorthand
+        tokenGetter: tokenGetter,
+        allowedDomains: ['localhost:44367'],
+        disallowedRoutes: [''],
+      },
+    }),
     AppRoutingModule,
     ReactiveFormsModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

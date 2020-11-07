@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { Router } from '@angular/router';
 import { Evt } from 'src/app/_Models/Evt';
 import { EventService } from 'src/app/_Services/event.service';
 
@@ -11,7 +12,7 @@ import { EventService } from 'src/app/_Services/event.service';
 })
 export class AddEventComponent implements OnInit {
 
-  constructor(private fb: FormBuilder , private eventservice: EventService) { }
+  constructor(private fb: FormBuilder , private eventservice: EventService , private rout: Router) { }
  addForm: FormGroup;
  public response: {url: ''};
  event: Evt;
@@ -33,9 +34,8 @@ export class AddEventComponent implements OnInit {
  add(){
   this.event = Object.assign({}, this.addForm.value);
   this.event.url = this.response.url;
-  console.log(this.event);
   this.eventservice.addEvent(this.event).subscribe(
-    res => { console.log('eshta'); } , error => {
+    res => {   } , error => {
       console.log('error');
     }
   );

@@ -71,14 +71,13 @@ export class PlaceAddComponent implements OnInit {
       } , err => console.log(err));
     }
     else{
-      if(this.response.url === null){
+      if (this.response.url === null){
         if (this.Editurl !== null){
           this.place.url = this.Editurl;
         }
       }else{
         this.place.url = this.response.url;
       }
-      
       this.place.id = this.id;
       this.placeS.updatePlace(this.place).subscribe(x => {
         this.message = 'Product has been Updated successfully';

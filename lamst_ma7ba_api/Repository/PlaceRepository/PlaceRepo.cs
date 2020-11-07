@@ -60,7 +60,6 @@ namespace lamst_ma7ba_Api.Repository.PlaceRepository
             _context.Entry(place).Property(p => p.url).IsModified = true;
             await _context.SaveChangesAsync();
             return place;
-
         }
 
         public async Task<IEnumerable<Place>> GetAllPlacesAsync()

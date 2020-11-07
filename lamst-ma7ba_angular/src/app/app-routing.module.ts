@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AccountComponent } from './account/account.component';
 import { AddEventComponent } from './events/add-event/add-event.component';
 import { EventsComponent } from './events/events.component';
 import { HomeComponent } from './home/home.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path: 'places' , component: PlacesComponent},
   {path: 'add-place' , component: PlaceAddComponent},
   {path: 'edit-place/:id' , component: PlaceAddComponent},
-  {path: 'place-detail/:id' , component: PlaceDetailComponent}
+  {path: 'place-detail/:id' , component: PlaceDetailComponent},
+  {path: 'login' , component: AccountComponent}
 ];
 
 @NgModule({

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using lamst_ma7ba_Api.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,21 +22,22 @@ namespace lamst_ma7ba_Api.Controllers
             _repEvent = repEvent;
         }
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IList<Event>>> get()
         {
-            IList<Event> evts = _repEvent.GetAllEvents().ToList();
+            IList<Event> evts = await _repEvent.GetAllEvents();
             return Ok(evts);
         }
         [HttpGet("{id}")]
         public async Task<ActionResult<Event>> getEvent(int id)
         {
-            var evt =  _repEvent.GetEvent(id);
+            var evt =  await _repEvent.GetEvent(id);
             return Ok(evt);
         }
         [HttpPost]
         public async Task<ActionResult> post(Event evt)
         {
-            _repEvent.AddEvent(evt);
+            await _repEvent.AddEvent(evt);
             return StatusCode(202);
         }
         [HttpDelete("{id}")]
@@ -43,7 +45,7 @@ namespace lamst_ma7ba_Api.Controllers
         {
             if (_repEvent.isexist(id))
             {
-                _repEvent.DeleteEvent(id);
+                await _repEvent.DeleteEvent(id);
                 return StatusCode(202);
             }
             return StatusCode(400);
@@ -53,7 +55,7 @@ namespace lamst_ma7ba_Api.Controllers
         {
             if (_repEvent.isexist(id))
             {
-                _repEvent.UpdateEvent(id, evt);
+              await  _repEvent.UpdateEvent(id, evt);
                 return StatusCode(202);
             }
             return StatusCode(400);

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SQLitePCL;
 using System;
 using System.Collections.Generic;
@@ -19,30 +20,28 @@ namespace lamst_ma7ba_Api.Models
             _context = context;
         }
 
-        public void AddEvent(Event Event)
+        public async Task AddEvent(Event Event)
         {
-            _context.Events.Add(Event);
-            _context.SaveChanges();
-           
+            await _context.Events.AddAsync(Event);
+            await _context.SaveChangesAsync();
         }
 
-        public void DeleteEvent(int id)
+        public async Task DeleteEvent(int id)
         {
-            var evt = _context.Events.FirstOrDefault(X => X.Id == id);
-            _context.Events.Remove(evt);
-            _context.SaveChanges();
+            var evt = await _context.Events.FirstOrDefaultAsync(X => X.Id == id);
+             _context.Events.Remove(evt);
+           await _context.SaveChangesAsync();
         }
 
-        public IList<Event> GetAllEvents()
+        public async Task<IList<Event>> GetAllEvents()
         {
-            var eves = _context.Events.ToList();
-
+            var eves = await _context.Events.ToListAsync();
             return eves;
         }
 
-        public Event GetEvent(int id)
+        public async Task<Event> GetEvent(int id)
         {
-            var evt = _context.Events.FirstOrDefault(x => x.Id == id);
+            var evt = await _context.Events.FirstOrDefaultAsync(x => x.Id == id);
             return evt;
         }
 
@@ -59,9 +58,9 @@ namespace lamst_ma7ba_Api.Models
             } return false;
         } 
 
-        public void UpdateEvent( int id , Event evt)
+        public async Task UpdateEvent( int id , Event evt)
         {
-            Event evt1 = _context.Events.Find(id);
+            Event evt1 = await _context.Events.FindAsync(id);
             Event ev2 = new Event()
             {
                 Id = evt1.Id,
@@ -69,12 +68,10 @@ namespace lamst_ma7ba_Api.Models
                 Description = evt.Description,
                 Location = evt.Location,
                 Date = DateTime.Now
-
-
             };
-            _context.Remove(evt1);
-            _context.Add(ev2);
-            _context.SaveChanges();
+             _context.Remove(evt1);
+           await _context.AddAsync(ev2);
+            await _context.SaveChangesAsync();
         }
 
     }
