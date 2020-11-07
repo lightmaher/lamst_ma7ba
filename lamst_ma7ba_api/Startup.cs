@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using lamst_ma7ba_Api.Models;
+using lamst_ma7ba_Api.Repository.ContactUsRepository;
 using lamst_ma7ba_Api.Repository.PlaceRepository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -47,6 +48,7 @@ namespace lamst_ma7ba_Api
             services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("conn")));
             services.AddScoped<IRepEvent, RepEvent>();
             services.AddScoped<IPlaceRepo , PlaceRepo>();
+            services.AddScoped<IContectUsRepoistory, ContactUsRepoistory>();
             services.AddCors();
 
             // for identity ->
@@ -69,6 +71,10 @@ namespace lamst_ma7ba_Api
                    };
                });
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme);
+            services.AddControllersWithViews()
+               .AddNewtonsoftJson(options =>
+           options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+             );
 
 
         }

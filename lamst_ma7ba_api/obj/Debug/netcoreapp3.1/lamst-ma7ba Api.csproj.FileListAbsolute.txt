@@ -407,11 +407,13 @@ F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\obj\Debug\net
 F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.genruntimeconfig.cache
 F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csprojAssemblyReference.cache
 F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
 F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
 F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
 F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
 F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csprojAssemblyReference.cache
 F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csproj.CoreCompileInputs.cache
 F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.MvcApplicationPartsAssemblyInfo.cache
