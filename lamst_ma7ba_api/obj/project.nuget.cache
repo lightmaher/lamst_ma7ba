@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5YvMuPnZdlDtQS6FxZs030YccUcb5Y7eSPnCW/R7oZ0ToKV5Q3i67FogqMBs+M0iCvsX0kt/IT1nRhgvzYmhiw==",
+  "dgSpecHash": "rsTazjEQlmceHcpZ8UKuAnTeEXz3wMkTq1zcMe4pOxxmA6mxbP126krslR9wgRzLIRAJltP5J//ItJBYfGaG2Q==",
   "success": true,
-  "projectFilePath": "F:\\web developer\\Heart_Foundation\\lamst_ma7ba-main\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
+  "projectFilePath": "F:\\web developer\\Heart_Foundation\\lamst-ma7ba Api\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nourmaher\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\nourmaher\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

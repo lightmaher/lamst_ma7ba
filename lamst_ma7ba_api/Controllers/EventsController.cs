@@ -22,7 +22,6 @@ namespace lamst_ma7ba_Api.Controllers
             _repEvent = repEvent;
         }
         [HttpGet]
-        [Authorize]
         public async Task<ActionResult<IList<Event>>> get()
         {
             IList<Event> evts = await _repEvent.GetAllEvents();
