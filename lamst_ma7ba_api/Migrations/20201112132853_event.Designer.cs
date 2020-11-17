@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using lamst_ma7ba_Api.Models;
 
 namespace lamst_ma7ba_Api.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20201112132853_event")]
+    partial class @event
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -252,13 +254,13 @@ namespace lamst_ma7ba_Api.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Location")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Needs")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Number")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PlaceId")
+                    b.Property<int>("Nummber")
                         .HasColumnType("int");
 
                     b.Property<string>("Title")
@@ -269,14 +271,12 @@ namespace lamst_ma7ba_Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PlaceId");
-
                     b.ToTable("Events");
                 });
 
             modelBuilder.Entity("lamst_ma7ba_Api.Models.Place", b =>
                 {
-                    b.Property<int>("PlaceId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -292,7 +292,7 @@ namespace lamst_ma7ba_Api.Migrations
                     b.Property<string>("url")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("PlaceId");
+                    b.HasKey("Id");
 
                     b.ToTable("places");
                 });
@@ -344,15 +344,6 @@ namespace lamst_ma7ba_Api.Migrations
                     b.HasOne("lamst_ma7ba_Api.Models.Admin", null)
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("lamst_ma7ba_Api.Models.Event", b =>
-                {
-                    b.HasOne("lamst_ma7ba_Api.Models.Place", "Location")
-                        .WithMany("Events")
-                        .HasForeignKey("PlaceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

@@ -47,7 +47,7 @@ namespace lamst_ma7ba_Api.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
-            _contectUsRepoistory.delete_message(id);
+            await _contectUsRepoistory.delete_message(id);
             return StatusCode(202);
         }
     }

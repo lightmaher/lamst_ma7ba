@@ -10,9 +10,9 @@
          <div class="col-md-8">
             <p class="card-text bold">{{place.description}}</p>
             <button class="btn btn-outline-primary mr-2"
-             type="button" (click)="EditPlaceClick(place.id)">تعديل</button>
+             type="button" (click)="EditPlaceClick(place.placeId)">تعديل</button>
              <button class="btn btn-danger mr-2" 
-             (click)="ondelete(place.id)">حذف</button>
+             (click)="ondelete(place.placeId)">حذف</button>
 
              <!--
             <button class="btn btn-outline-danger" *ngIf="isAdmin()" type="button" (click)="onDelete(product.productId)">  Delete </button>   -->           

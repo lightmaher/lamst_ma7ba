@@ -44,11 +44,11 @@ namespace lamst_ma7ba_Api.Repository.PlaceRepository
 
         public async Task<Place> EditPlaceAsync(Place model)
         {
-            if (model.Id == 0)
+            if (model.PlaceId == 0)
             {
                 return null;
             }
-            var place = await _context.places.FirstOrDefaultAsync(p => p.Id == model.Id);
+            var place = await _context.places.FirstOrDefaultAsync(p => p.PlaceId == model.PlaceId);
             if (place == null)
                 return null;
             _context.places.Attach(place);
@@ -71,7 +71,7 @@ namespace lamst_ma7ba_Api.Repository.PlaceRepository
         {
             if (id !=0)
             {
-                var place = await _context.places.FirstOrDefaultAsync(p => p.Id == id);
+                var place = await _context.places.FirstOrDefaultAsync(p => p.PlaceId == id);
                 if (place == null)
                     return null;
                 return place;

@@ -1,6 +1,9 @@
+import { Evt } from './Evt';
+
 export class Place{
-    id: number;
+    placeId: number;
     title: string;
     description: string;
     url: string;
+    events: Evt[];
 }

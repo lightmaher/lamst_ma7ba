@@ -5,7 +5,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { FormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
@@ -19,6 +18,11 @@ import { PlaceDetailComponent } from './places/place-detail/place-detail.compone
 import { PlaceComponent } from './places/place/place.component';
 import { AccountComponent } from './account/account.component';
 import {JwtModule} from '@auth0/angular-jwt';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -37,7 +41,7 @@ export function tokenGetter() {
     PlaceAddComponent,
     PlaceDetailComponent,
     PlaceComponent,
-    AccountComponent
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,9 +57,14 @@ export function tokenGetter() {
     AppRoutingModule,
     ReactiveFormsModule,
     MatDatepickerModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [MatDatepickerModule, MatNativeDateModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

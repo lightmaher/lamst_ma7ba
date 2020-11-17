@@ -12,10 +12,14 @@ namespace lamst_ma7ba_Api.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
+        public string Needs { get; set; }
+        public int Number { get; set; }
         [NotMapped]
         public IFormFile file { get; set; }
         public string url { get; set; }
         public DateTime Date { get; set; }
-        public string Location { get; set; }
+        public int PlaceId { get; set; }
+        public virtual Place Location { get; set; }
+        
     }
 }

@@ -1,12 +1,12 @@
 <div class="card shadow-sm">
-    <a [routerLink]="['/place-detail' , place.id]"><img [src]="createImgPath(place.url)" class="card-img-top ml-3 mt-2" alt="profile picture" height="190"></a>
+    <a [routerLink]="['/place-detail' , place.placeId]"><img [src]="createImgPath(place.url)" class="card-img-top ml-3 mt-2" alt="profile picture" height="190"></a>
     <div class="card-body">
         <a>
             <h6 class="text-uppercase mb-3">{{place.title}}</h6>
         </a>
         <span class="mb-4">{{place.description}}</span>
         <div class="btn-group mb-2">
-            <button type="button" [routerLink]="['/place-detail', place.id]" class="btn btn-sm btn-outline-info text-uppercase bold">التفاصيل</button>
+            <button type="button" [routerLink]="['/place-detail', place.placeId]" class="btn btn-sm btn-outline-info text-uppercase bold">التفاصيل</button>
         </div>
     </div>
 </div>

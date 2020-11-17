@@ -18,7 +18,8 @@ export class EventComponent implements OnInit {
   }
   delete(id: number){
     this.eventservice.deleteEvent(id).subscribe(res => {
-      console.log('eshta');
+      window.location.reload();
+
     }, error => {
       console.log('error');
     });

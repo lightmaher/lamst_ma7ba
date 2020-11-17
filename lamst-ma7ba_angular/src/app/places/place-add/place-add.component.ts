@@ -18,7 +18,7 @@ export class PlaceAddComponent implements OnInit {
   response: {url: ''};
   Editurl: string;
   message: string;
-  id = 0;
+  placeId = 0;
   placeForm: FormGroup;
   btnTitle: string;
   place: Place;
@@ -41,15 +41,16 @@ export class PlaceAddComponent implements OnInit {
       description: ['' , Validators.required]
     });
     this.place = {
-     id: 0,
+     placeId: 0,
      title: '',
      url: '',
-     description: ''
+     description: '',
+     events : []
    };
     this.activeRoute.paramMap.subscribe(params => {
      const id = +params.get('id');
      if (id){
-       this.id = id;
+       this.placeId = id;
        this.placeS.GetPlace(id).subscribe(x => {
          this.place = x;
          this.Title = 'تعديل';
@@ -78,7 +79,7 @@ export class PlaceAddComponent implements OnInit {
       }else{
         this.place.url = this.response.url;
       }
-      this.place.id = this.id;
+      this.place.placeId = this.placeId;
       this.placeS.updatePlace(this.place).subscribe(x => {
         this.message = 'Product has been Updated successfully';
       } , err => console.log(err));
