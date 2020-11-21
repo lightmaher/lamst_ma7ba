@@ -4,3 +4,20 @@
 .card{
     width: 95%;
 }
+.card{
+    border-radius: 0;
+    box-shadow: 5px 5px 10px #27318b;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+.card:hover{
+    background: #27318b;
+    color: #fff;
+    border: none;
+    box-shadow: 5px 5px 10px #9E9E9E;
+    border-radius: 5px;
+}
+.card:hover h6{
+    color: #fff;
+}

@@ -1,7 +1,21 @@
-<button type="button" routerLink="/add-place" class="btn btn-primary mt-3">Add Place</button>
 
-<div class="row" style="direction: rtl;">
-    <div class="col-md-3">
-        <app-place *ngFor="let plc of places" [place]="plc"></app-place>
+<div class="container">
+    <div>
+        <button type="button" routerLink="/add-place" class="btn btn-primary mt-3">اضافة مكان</button>
+
+        <div class="row mb-5" style="direction: rtl;">
+                <app-place *ngFor="let plc of places" [place]="plc"></app-place>
+        </div>
+    </div>
+   
+    <div>
+        <div style="display: block; width: 80%; text-align: center;">
+            <canvas baseChart 
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"></canvas>
+        </div>
     </div>
 </div>

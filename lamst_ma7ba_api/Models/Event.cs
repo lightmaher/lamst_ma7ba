@@ -18,6 +18,7 @@ namespace lamst_ma7ba_Api.Models
         public IFormFile file { get; set; }
         public string url { get; set; }
         public DateTime Date { get; set; }
+        [ForeignKey("Location")]
         public int PlaceId { get; set; }
         public virtual Place Location { get; set; }
         

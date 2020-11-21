@@ -16,7 +16,7 @@ export class PlaceDetailComponent implements OnInit {
               private route: Router) { }
 
   ngOnInit(): void {
-    const id = +this.activeRoute.snapshot.params.placeId;
+    const id = +this.activeRoute.snapshot.params['id'];
     this.placeS.GetPlace(id).subscribe(x => {
       this.place = x;
     } , err => console.log(err));
