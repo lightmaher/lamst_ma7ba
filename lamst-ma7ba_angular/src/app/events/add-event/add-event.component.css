@@ -1,0 +1,11 @@
+.placeForm{
+    margin-top: 20px;
+    border: 1px solid #ced4da;
+    padding: 20px;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}

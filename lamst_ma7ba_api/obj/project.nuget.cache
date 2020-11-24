@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rsTazjEQlmceHcpZ8UKuAnTeEXz3wMkTq1zcMe4pOxxmA6mxbP126krslR9wgRzLIRAJltP5J//ItJBYfGaG2Q==",
+  "dgSpecHash": "yxdLWxFK96bEa6rjiVeCPxB17EFSunSu1kEKN5NZcdx/nyzhRemWD4/aBxq2s2dsAEb9smwydLFxLlJWxvaitw==",
   "success": true,
   "projectFilePath": "F:\\web developer\\Heart_Foundation\\lamst-ma7ba Api\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
   "expectedPackageFiles": [
@@ -38,7 +38,7 @@
     "C:\\Users\\nourmaher\\.nuget\\packages\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\nourmaher\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\nourmaher\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
-    "C:\\Users\\nourmaher\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.4\\microsoft.codeanalysis.analyzers.2.9.4.nupkg.sha512",
+    "C:\\Users\\nourmaher\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.1\\microsoft.codeanalysis.analyzers.3.3.1.nupkg.sha512",
     "C:\\Users\\nourmaher\\.nuget\\packages\\microsoft.codeanalysis.common\\3.3.1\\microsoft.codeanalysis.common.3.3.1.nupkg.sha512",
     "C:\\Users\\nourmaher\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.3.1\\microsoft.codeanalysis.csharp.3.3.1.nupkg.sha512",
     "C:\\Users\\nourmaher\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\3.3.1\\microsoft.codeanalysis.csharp.workspaces.3.3.1.nupkg.sha512",

@@ -577,8 +577,6 @@ F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\bi
 F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csprojAssemblyReference.cache
 F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.AssemblyInfoInputs.cache
 F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.AssemblyInfo.cs
-F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csproj.CoreCompileInputs.cache
-F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.MvcApplicationPartsAssemblyInfo.cache
 F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.RazorTargetAssemblyInfo.cache
 F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csproj.CopyComplete
 F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\staticwebassets\lamst-ma7ba Api.StaticWebAssets.Manifest.cache
@@ -594,3 +592,6 @@ C:\Users\rt\Commerce-Github\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\
 C:\Users\rt\Commerce-Github\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\rt\Commerce-Github\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\rt\Commerce-Github\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.GeneratedMSBuildEditorConfig.editorconfig
+F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csproj.CoreCompileInputs.cache
+F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.MvcApplicationPartsAssemblyInfo.cache

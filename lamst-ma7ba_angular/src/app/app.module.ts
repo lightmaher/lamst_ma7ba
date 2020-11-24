@@ -24,6 +24,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FooterMenuComponent } from './footer-menu/footer-menu.component';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
 
 
 export function tokenGetter() {
@@ -47,6 +49,7 @@ export function tokenGetter() {
     FooterMenuComponent,
   ],
   imports: [
+    IvyCarouselModule,
     BrowserModule,
     HttpClientModule,
     ChartsModule,

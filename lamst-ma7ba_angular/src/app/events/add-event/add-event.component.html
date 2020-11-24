@@ -1,4 +1,4 @@
-<div class="container mt-4">
+<div class="container col-md-5 mt-4 placeForm">
     <form [formGroup]="addForm" (ngSubmit)="add()">
         <div class="form-group">
             <input type="text" class="form-control" placeholder="عنوان الفاعلية" formControlName="title">
@@ -6,17 +6,18 @@
         <div class="form-group">
             <textarea class="form-control" rows="3" placeholder="التفاصيل" formControlName="description"></textarea>
         </div>
-        <div class="row ml-2">
-            <div class="col-4">
+        <div class="row ml-1">
+            <div class="col-6">
                 <div class="row">
-                    <select class="form-control col-8" formControlName="placeId" aria-placeholder="مكان الزيارة">
+                 <label class="font-weight-bold text-center" >  مكان الزيارة  </label>
+                    <select class="form-control" formControlName="placeId" aria-placeholder="مكان الزيارة">
                         <option *ngFor="let place of places" [value]="place.placeId">{{place.title}}</option>
                     </select>
-                    <label class="font-weight-bold text-center col-4 mt-2" >  : مكان الزيارة  </label>
+                   
                 </div>
            
             </div>
-            <div class="col-4">
+            <div class="col-6 mt-2">
                 <mat-form-field class="example-full-width ml-3" appearance="fill">
                     <mat-label>تاريخ الزيارة </mat-label>
                     <input matInput [matDatepicker]="picker" formControlName="date">
@@ -25,9 +26,7 @@
                     <mat-datepicker #picker></mat-datepicker>
                   </mat-form-field>                    
             </div>
-            <div class="col-4 ">
-                <app-upload (onUploadFinished)="uploadFinished($event)"></app-upload>
-            </div>
+
         </div>
         <div class="row">
             <div class="col">
@@ -37,8 +36,11 @@
                 <input type="text" class="form-control" placeholder="الاحتياجات" formControlName="needs">
             </div>
         </div>
+        <div class="mt-2">
+        <app-upload (onUploadFinished)="uploadFinished($event)"></app-upload>
+        </div>
         <div>
-            <button class="btn btn-primary mt-2 float-right btn-lg text-xl-center" [hidden]="!addForm.valid" type="submit"> اضافة </button>
+            <button class="btn btn-primary mt-2 float-right btn-lg text-xl-center"  type="submit"> اضافة </button>
         </div>
 
     </form>
