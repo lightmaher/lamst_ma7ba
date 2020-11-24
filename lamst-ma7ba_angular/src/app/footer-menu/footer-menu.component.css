@@ -55,7 +55,6 @@
 .footer .footer-content .about .socials a{
     width: 45px;
     height: 41px;
-    border: 1px solid gray;
     padding-top: 5px;
     margin-right: 5px;
     font-size: 1.3em;
@@ -118,4 +117,8 @@
     .footer .footer-content .contact-us{
         padding-bottom: 90px;
     }
+}
+
+h2,p,div,input,span{
+font-family: cairo;
 }

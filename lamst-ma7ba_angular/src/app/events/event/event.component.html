@@ -2,7 +2,7 @@
     <div class="card-header bg-danger">
       </div>
     <img class="card-img-top" [src]="createImgPath(evt.url)" alt="Card image cap" height="200">
-    <div class="card-body text-right" >
+    <div class="card-body" >
         <h1 class="card-title text-center text-primary text-uppercase">{{evt.title}}</h1>
         <h2>  مكان الحدث : {{evt.location.title}}</h2>
         <h2>  {{evt.date}}</h2>
@@ -10,8 +10,8 @@
         <p class="card-text">{{evt.description}}</p>
         <h2>   عدد المتطوعين : {{evt.number}}</h2>
         <h2> الاحتياجات : {{evt.needs}}</h2>
-        <a class="btn btn-primary ml-1">تفاصيل</a>
-        <a (click)="delete(evt.id)" class="btn btn-danger">حذف</a>
+        <a [routerLink]="['/event-detail',evt.id]" class="btn btn-primary mr-1 text-white">تفاصيل</a>
+        <a (click)="delete(evt.id)" class="btn btn-danger text-white">حذف</a>
 
 
     </div>
