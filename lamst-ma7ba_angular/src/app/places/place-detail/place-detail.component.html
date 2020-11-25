@@ -1,14 +1,18 @@
 <div class="container">
-    <div class="mt-4" >
-        <h1 class="text-center" style="color: #27318b; font-weight: bold; font-size: 28px;">{{place.title}}</h1>
-        <hr style="width: 8%; border: 2px solid #d8d8d8; border-radius: 10px;">
-     </div>
-     <div class="row mt-5" style="direction: rtl;">
-         <div class="col-md-4">
-            <img [src]="createImgPath(place.url)" class="mx-auto d-block img-fluid" 
-             alt="profile picture" height="400" style="max-width: 100%;">
-         </div>
-         <div class="col-md-8">
+    <div class="row">
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item"><a [routerLink]="['/places']" routerLinkActive="router-link-active" >الاماكن</a></li>
+            <li class="breadcrumb-item active">{{place.title}}</li>
+        </ol>
+        <div class="col-12 col-auto">
+            <h1 class="text-center" style="color: #27318b; font-weight: bold; font-size: 28px;">{{place.title}}</h1>
+            <hr style="width: 8%; border: 2px solid #d8d8d8; border-radius: 10px;">
+        </div>
+    </div>
+
+    <div class="row row-content ">
+        <div class="col-12 col-ms-7 col-md-6">
+            <h2  style="color: #27318b; font-weight: bold; font-size: 28px;">نبذة عن المكان</h2>
             <p class="card-text" style="font-size: 16px;">{{place.description}}</p>
             <button class="btn btn-outline-primary mr-2"
              type="button" (click)="EditPlaceClick(place.placeId)">تعديل</button>
@@ -18,6 +22,30 @@
              <!--
             <button class="btn btn-outline-danger" *ngIf="isAdmin()" type="button" (click)="onDelete(product.productId)">  Delete </button>   -->           
         </div>
-     </div>
+        <div class="col-12 col-sm-6">
+            <img [src]="createImgPath(place.url)" class="mx-auto d-block img-fluid" 
+             alt="profile picture" height="400" style="max-width: 100%;">
+        </div>
+    </div>
+
+    <div class="rwo row-content align-items-center">
+        <div *ngFor="let event of fevet" class="row-content align-items-center">
+            <div class="offset-md-1 col-md-9 col-xs-12">
+                <div class="media border rounded" style="background-color: lightcoral;">
+                    <div class="media-body row pl-3 pt-1 pb-1 align-items-center">
+                        <div class="col-md-8">
+                            <h2 class="mt-0" style="color: #27318b; font-weight: bold;">{{event.title}}
+                            </h2>
+                            <hr>
+                            <p>{{event.description}}</p>
+                        </div>
+                        <div class="col-md-4 pt-1 pb-1 ">
+                            <img [src]="createImgPath(place.url)" class="d-flex mr-3 img-thumbnail align-self-center" 
+                            alt="profile picture" height="auto" width="200">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
 </div>
-     
