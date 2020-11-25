@@ -1,13 +1,14 @@
-<div class="col-lg-3 col-md-6 mt-2">
+<div class="col-lg-3 col-md-6">
     <div class="card mr-2 mt-2" style="width: 20rem;">
         <a [routerLink]="['/place-detail' , place.placeId]"><img 
             [src]="createImgPath(place.url)" class="card-img-top ml-4 mt-4" alt="profile picture" height="190"></a>
         <div class="card-body">
             <a>
-                <h1 class="text-uppercase text-center mb-3" style="font-family:cairo;font-weight:bolder;">{{place.title}}</h1>
+                <h3 class="text-uppercase mb-3">{{place.title}}</h3>
             </a>
+            <span class="mb-4">{{place.description}}</span>
             <div class="mt-4">
-                <button type="button" [routerLink]="['/place-detail', place.placeId]" class="btn btn-outline-danger btn-block text-uppercase bold"> التفاصيل</button>
+                <button type="button" [routerLink]="['/place-detail', place.placeId]" class="btn btn-outline-info btn-block text-uppercase bold">التفاصيل</button>
             </div>
         </div>
     </div>

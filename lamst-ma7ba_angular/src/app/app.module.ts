@@ -25,7 +25,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FooterMenuComponent } from './footer-menu/footer-menu.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
-import { EventDetailsComponent } from './events/event/event-details/event-details.component';
 
 
 
@@ -48,7 +47,6 @@ export function tokenGetter() {
     PlaceComponent,
     AccountComponent,
     FooterMenuComponent,
-    EventDetailsComponent,
   ],
   imports: [
     IvyCarouselModule,
