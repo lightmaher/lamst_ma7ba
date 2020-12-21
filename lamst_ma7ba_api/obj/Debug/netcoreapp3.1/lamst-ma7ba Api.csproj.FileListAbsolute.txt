@@ -419,7 +419,6 @@ F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\obj\Debug\net
 F:\web developer\Heart_Foundation\lamst_ma7ba-main\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.MvcApplicationPartsAssemblyInfo.cache
 F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\appsettings.json
-F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\lamst-ma7ba Api.exe
 F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\lamst-ma7ba Api.deps.json
 F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\lamst-ma7ba Api.runtimeconfig.json
@@ -934,3 +933,4 @@ H:\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\staticwebassets\lamst-ma7
 H:\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.dll
 H:\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.pdb
 H:\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.genruntimeconfig.cache
+F:\web developer\Heart_Foundation\lamst-ma7ba Api\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\scopedcss\bundle\lamst-ma7ba Api.styles.css

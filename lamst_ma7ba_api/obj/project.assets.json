@@ -10075,11 +10075,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
+      "projectUniqueName": "F:\\web developer\\Heart_Foundation\\lamst-ma7ba Api\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
       "projectName": "lamst-ma7ba Api",
-      "projectPath": "H:\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
+      "projectPath": "F:\\web developer\\Heart_Foundation\\lamst-ma7ba Api\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
       "packagesPath": "C:\\Users\\nourmaher\\.nuget\\packages\\",
-      "outputPath": "H:\\lamst_ma7ba\\lamst_ma7ba_api\\obj\\",
+      "outputPath": "F:\\web developer\\Heart_Foundation\\lamst-ma7ba Api\\lamst_ma7ba\\lamst_ma7ba_api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nourmaher\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10094,6 +10094,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -10105,6 +10106,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -10207,7 +10209,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

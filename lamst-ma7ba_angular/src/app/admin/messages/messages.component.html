@@ -1,0 +1,20 @@
+<div class="container mt-4">
+    <table class="table table-bordered" *ngFor="let item of messages">
+        <thead>
+          <tr>
+            <th scope="col">الاسم</th>
+            <th scope="col"> رقم الهاتف</th>
+            <th scope="col">الرسالة</th>
+            <th scope="col">ازالة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">{{item.name}}</th>
+            <td scope="row">{{item.phoneNumber}}</td>
+            <td scope="row">{{item.message}}</td>
+           <td scope="row"> <button (click)="onDelete(item.id)" class="btn btn-danger"> حذف </button> </td> 
+          </tr>
+        </tbody>
+      </table>
+</div>
