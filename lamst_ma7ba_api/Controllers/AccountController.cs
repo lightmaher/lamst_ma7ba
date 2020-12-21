@@ -41,7 +41,6 @@ namespace lamst_ma7ba_Api.Controllers
                 {
                     token = GenerateJwtToken(admin).Result,
                     admin
-
                 });
              
             }
