@@ -1,7 +1,24 @@
 a{ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      font-weight: bold;
     font-size: 17px;}
-a:hover{color: aqua;}
+li a::after{
+    
+    content: '';
+    /*position: absolute;
+    */display: block;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    margin-top: 2px;
+}
+li a:hover::after{
+    width: 100%;
+    
+}
+li:first-child{
+    margin-left: auto;
+    margin-right: 2em;
+}
 .navbar{
     border-bottom-right-radius: 10% solid red; 
     border-top-right-radius: 10% solid red;

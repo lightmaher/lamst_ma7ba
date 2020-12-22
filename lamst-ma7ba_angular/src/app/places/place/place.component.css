@@ -12,8 +12,8 @@
     -moz-transition: all 0.3s ease-in;
 }
 .card:hover{
-    background: #27318b;
-    color: #fff;
+    /*background: #27318b;
+    color: #fff;*/
     border: none;
     box-shadow: 5px 5px 10px #9E9E9E;
     border-radius: 5px;

@@ -17,6 +17,6 @@ namespace lamst_ma7ba_Api.Models
         public DbSet<Event> Events { get; set; }
         public DbSet<Place> places{ get; set; }
         public DbSet<ContactUs> messages { get; set; }
-
+        public DbSet<Need> Needs { get; set; }
     }
     }
