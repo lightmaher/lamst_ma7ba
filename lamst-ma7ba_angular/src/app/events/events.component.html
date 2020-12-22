@@ -4,6 +4,6 @@
             <app-event *ngFor="let item of events" [evt]="item"></app-event>
         </div>
 
-        <a routerLink="/addevent" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;" class="btn btn-light mt-3"> اضافة فاعلية جديدة</a>
+        <a *ngIf="loggedin()" routerLink="/addevent" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;" class="btn btn-light mt-3"> اضافة فاعلية جديدة</a>
     </div>
 </div>

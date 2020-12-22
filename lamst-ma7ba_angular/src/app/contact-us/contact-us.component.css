@@ -1,0 +1,16 @@
+.placeForm{
+    margin-top: 20px;
+    border: 1px solid #ced4da;
+    padding: 20px;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    margin-bottom: 30px;
+}
+h1,h2{
+    font-family: cairo;
+}
+main{
+    font-family: cairo;
+    font-weight: bold;
+    font-size: x-large;
+}

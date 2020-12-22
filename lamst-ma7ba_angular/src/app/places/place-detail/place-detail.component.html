@@ -14,9 +14,9 @@
         <div class="col-12 col-ms-7 col-md-6">
             <h2  style="color: #27318b; font-weight: bold; font-size: 28px;">نبذة عن المكان</h2>
             <p class="card-text" style="font-size: 16px;">{{place.description}}</p>
-            <button class="btn btn-outline-primary mr-2"
+            <button *ngIf="loggedin()" class="btn btn-outline-primary mr-2"
              type="button" (click)="EditPlaceClick(place.placeId)">تعديل</button>
-             <button class="btn btn-danger mr-2" 
+             <button *ngIf="loggedin()" class="btn btn-danger mr-2" 
              (click)="ondelete(place.placeId)">حذف</button>
 
              <!--
@@ -29,8 +29,11 @@
     </div>
 
     <div class="rwo row-content align-items-center">
+      
         <div *ngFor="let event of fevet" class="row-content align-items-center">
             <div class="offset-md-1 col-md-9 col-xs-12">
+                <h1 class="text-center">الزيارات القادمة</h1>
+                <hr style="width: 20%; border: 2px solid #d8d8d8; border-radius: 10px;">
                 <div class="media border rounded" style="background-color: lightcoral;">
                     <div class="media-body row pl-3 pt-1 pb-1 align-items-center">
                         <div class="col-md-8">
@@ -40,12 +43,20 @@
                             <p>{{event.description}}</p>
                         </div>
                         <div class="col-md-4 pt-1 pb-1 ">
-                            <img [src]="createImgPath(place.url)" class="d-flex mr-3 img-thumbnail align-self-center" 
+                            <img [src]="createImgPath(event.url)" class="d-flex mr-3 img-thumbnail align-self-center" 
                             alt="profile picture" height="auto" width="200">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+            <div class="border text-center border-primary rounded" style="display: block; width: 50%;margin-right: 200px;">
+                <canvas baseChart 
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [chartType]="barChartType"></canvas>
+            </div>
     </div> 
 </div>

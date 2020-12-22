@@ -26,12 +26,28 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { FooterMenuComponent } from './footer-menu/footer-menu.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { EventDetailsComponent } from './events/event/event-details/event-details.component';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AdminComponent } from './admin/admin.component';
+import { MessagesComponent } from './admin/messages/messages.component';
+
 
 
 
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
+export const FORMAT = {
+  parse: {
+      dateInput: 'DD-MM-YYYY',
+  },
+  display: {
+      dateInput: 'DD-MM-YYYY',
+      monthYearLabel: 'MMM YYYY',
+      dateA11yLabel: 'LL',
+      monthYearA11yLabel: 'MMMM YYYY',
+  },
+};
 
 @NgModule({
   declarations: [
@@ -49,9 +65,13 @@ export function tokenGetter() {
     AccountComponent,
     FooterMenuComponent,
     EventDetailsComponent,
+    ContactUsComponent,
+    AdminComponent,
+    MessagesComponent,
   ],
   imports: [
     IvyCarouselModule,
+    MatMomentDateModule,
     BrowserModule,
     HttpClientModule,
     ChartsModule,

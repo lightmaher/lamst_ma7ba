@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Evt } from 'src/app/_Models/Evt';
+import { AccountService } from 'src/app/_Services/Account.service';
 import { EventService } from 'src/app/_Services/event.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { EventService } from 'src/app/_Services/event.service';
 })
 export class EventComponent implements OnInit {
 
-  constructor( private eventservice: EventService) { }
+  constructor( private eventservice: EventService, private accountservice: AccountService) { }
  @Input()evt: Evt;
   ngOnInit(): void {
   }
@@ -23,5 +24,8 @@ export class EventComponent implements OnInit {
     }, error => {
       console.log('error');
     });
+  }
+  loggedin(){
+    return this.accountservice.loggedin();
   }
 }
