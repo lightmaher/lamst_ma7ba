@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { PlaceAddComponent } from './places/place-add/place-add.component';
 import { PlaceDetailComponent } from './places/place-detail/place-detail.component';
 import { PlacesComponent } from './places/places.component';
+import { NeedsComponent } from './needs/needs.component';
+import { AddNeedComponent } from './needs/add-need/add-need.component';
 
 
 const routes: Routes = [
@@ -20,6 +22,9 @@ const routes: Routes = [
   {path: 'add-place' , component: PlaceAddComponent},
   {path: 'edit-place/:id' , component: PlaceAddComponent},
   {path: 'place-detail/:id' , component: PlaceDetailComponent},
+  {path: 'needs' , component: NeedsComponent},
+  {path: 'add-need' , component: AddNeedComponent},
+  {path: 'edit-need/:id' , component: AddNeedComponent},
   {path: 'login' , component: AccountComponent},
   {path: 'event-detail/:id' , component: EventDetailsComponent},
   {path: 'contactus' , component: ContactUsComponent},

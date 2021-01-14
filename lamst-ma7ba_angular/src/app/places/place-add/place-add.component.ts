@@ -24,10 +24,10 @@ export class PlaceAddComponent implements OnInit {
   Title: string;
   messageValidate = {
     title: {
-      required: 'Title is required'
+      required: 'اسم المكان مطلوب'
     },
     description: {
-      required: 'Description is required'
+      required: 'التفاصيل مطلوبة'
     }
   };
   isEditMode: boolean;

@@ -11,6 +11,7 @@ namespace lamst_ma7ba_Api.Repository.NeedRepository
         Task<IEnumerable<Need>> GetAllNeedsAsync();
         Task<Need> AddNeedAsync(Need model);
         Task<Need> EditNeedAsync(Need model);
+        Task<Need> GetNeedAsync(int id);
         Task<bool> DeleteAsync(int id);
     }
 }

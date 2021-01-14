@@ -1,4 +1,3 @@
-
 <div class="container">
     <div>
         <button *ngIf="loggedin()" type="button" routerLink="/add-place" class="btn btn-primary mt-3">اضافة مكان</button>
@@ -7,6 +6,4 @@
                 <app-place *ngFor="let plc of places" [place]="plc"></app-place>
         </div>
     </div>
-   
-  
 </div>

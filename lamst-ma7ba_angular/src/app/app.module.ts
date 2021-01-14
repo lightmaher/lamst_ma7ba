@@ -30,6 +30,8 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminComponent } from './admin/admin.component';
 import { MessagesComponent } from './admin/messages/messages.component';
+import { NeedsComponent } from './needs/needs.component';
+import { AddNeedComponent } from './needs/add-need/add-need.component';
 
 
 
@@ -68,6 +70,8 @@ export const FORMAT = {
     ContactUsComponent,
     AdminComponent,
     MessagesComponent,
+    NeedsComponent,
+    AddNeedComponent,
   ],
   imports: [
     IvyCarouselModule,

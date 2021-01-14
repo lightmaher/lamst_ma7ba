@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using lamst_ma7ba_Api.Models;
 using lamst_ma7ba_Api.Repository.NeedRepository;
@@ -40,7 +42,7 @@ namespace lamst_ma7ba_Api.Controllers
             }
             return BadRequest();
         }
-        [HttpPost]
+        [HttpPut]
         [Route("EditNeed")]
         public async Task<IActionResult> EditNeed(Need model)
         {
@@ -53,6 +55,40 @@ namespace lamst_ma7ba_Api.Controllers
                 }
             }
             return BadRequest();
+        }
+        [HttpGet]
+        [Route("GetNeed/{id}")]
+        public async Task<ActionResult<Need>> GetNeed(int id)
+        {
+            var need = await _needRepo.GetNeedAsync(id);
+            if (need != null)
+                return need;
+            return null;
+        }
+        [HttpPost]
+        [Route("Upload")]
+        [DisableRequestSizeLimit]
+        public IActionResult Upload()
+        {
+            var file = Request.Form.Files[0];
+            var folderName = Path.Combine("Resources", "Imgaes");
+            var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+            if (file.Length > 0)
+            {
+                var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                var fullPath = Path.Combine(pathToSave, fileName);
+                var url = Path.Combine(folderName, fileName);
+
+                using (var stream = new FileStream(fullPath, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+                return Ok(new { url });
+            }
+            else
+            {
+                return BadRequest();
+            }
         }
     }
 }
