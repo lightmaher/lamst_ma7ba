@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { tick } from '@angular/core/testing';
 import { Form, FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -12,10 +13,16 @@ import { AccountService } from '../_Services/Account.service';
 })
 export class AccountComponent implements OnInit {
 
-  constructor( private fb: FormBuilder , private accountservice: AccountService , private route: Router ) { }
+  constructor( private fb: FormBuilder , private accountservice: AccountService , private route: Router, private http: HttpClient ) { }
  loginForm: FormGroup;
   ngOnInit(): void {
     this.createForm();
+    this.createAdmin();
+  }
+  createAdmin(){
+    return this.http.get('https://localhost:44367/api/Account/createadmin').subscribe(
+      res => {console.log('succ'); } , err => {console.log('error'); }
+    );
   }
 createForm(){
  this.loginForm = this.fb.group(

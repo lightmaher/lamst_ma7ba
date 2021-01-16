@@ -14,7 +14,6 @@ export class EventsComponent implements OnInit {
   constructor(private eventservice: EventService, private accountservice: AccountService, private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.createAdmin();
     this.get_events();
   }
 get_events(){
@@ -25,9 +24,5 @@ get_events(){
 loggedin(){
   return this.accountservice.loggedin();
 }
-createAdmin(){
-  return this.http.get('https://localhost:44367/api/Account/createadmin').subscribe(
-    res => {console.log('succ'); } , err => {console.log('error'); }
-  );
-}
+
 }
