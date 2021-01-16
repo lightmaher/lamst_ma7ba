@@ -28,7 +28,6 @@ style="margin-right:13%;margin-top: -25px;background-color: #DC143C;">
             routerLinkActive="active">
                 <a class="nav-link" routerLink="/events">الاحداث</a>
             </li>
-<<<<<<< Updated upstream
             <li class="nav-item mr-2"
             routerLinkActive="active">
                 <a class="nav-link color" routerLink="/needs">الاحتياجات</a>
@@ -37,19 +36,12 @@ style="margin-right:13%;margin-top: -25px;background-color: #DC143C;">
             routerLinkActive="active">
                 <a class="nav-link" routerLink="/contactus">تواصل معنا</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" *ngIf="loggedin()" routerLink="/messages">الرسئال</a>
-=======
             
             <li class="nav-item">
-                <a class="nav-link text-white" routerLink="/contactus">تواصل معنا</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" *ngIf="loggedin()" routerLink="/messages">الرسائل</a>
+                <a class="nav-link " *ngIf="loggedin()" routerLink="/messages">الرسائل</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white" *ngIf="loggedin()" routerLink="/users"> المتطوعين </a>
->>>>>>> Stashed changes
             </li>
         </ul>
     </div>

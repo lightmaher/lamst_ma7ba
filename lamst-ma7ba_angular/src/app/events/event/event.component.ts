@@ -36,8 +36,6 @@ joinform: FormGroup;
     this.join.eventId = this.evt.id;
     this.eventservice.joinevent(this.join).subscribe(
       res => { this.alret.succ('شكرا لك ,سنتواصل معك لتاكيد الحضور');
-               this.jQuery('#myModal').modal('hide');
-
     }
     );
   }

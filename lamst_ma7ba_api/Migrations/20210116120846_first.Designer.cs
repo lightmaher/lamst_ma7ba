@@ -10,8 +10,8 @@ using lamst_ma7ba_Api.Models;
 namespace lamst_ma7ba_Api.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20210111131239_join2")]
-    partial class join2
+    [Migration("20210116120846_first")]
+    partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
