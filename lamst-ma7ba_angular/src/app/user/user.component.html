@@ -1,0 +1,6 @@
+<div class="container">
+    <h1 class="mt-2"> المتطوعين </h1>
+    <div class="list-group w-50" *ngFor="let item of users">
+        <a [routerLink]="['/user-detail', item.id]" class="list-group-item list-group-item-action list-group-item-info mt-2" >{{item.firstName}} {{item.secoundName}}</a>
+</div>
+</div>

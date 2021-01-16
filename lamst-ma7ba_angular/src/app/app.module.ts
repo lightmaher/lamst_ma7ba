@@ -30,8 +30,14 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminComponent } from './admin/admin.component';
 import { MessagesComponent } from './admin/messages/messages.component';
+<<<<<<< Updated upstream
 import { NeedsComponent } from './needs/needs.component';
 import { AddNeedComponent } from './needs/add-need/add-need.component';
+=======
+import { UserComponent } from './user/user.component';
+import { UserAddComponent } from './user/user-add/user-add.component';
+import { UserDetailsComponent } from './user/user-details/user-details.component';
+>>>>>>> Stashed changes
 
 
 
@@ -70,8 +76,14 @@ export const FORMAT = {
     ContactUsComponent,
     AdminComponent,
     MessagesComponent,
+<<<<<<< Updated upstream
     NeedsComponent,
     AddNeedComponent,
+=======
+    UserComponent,
+    UserAddComponent,
+    UserDetailsComponent,
+>>>>>>> Stashed changes
   ],
   imports: [
     IvyCarouselModule,

@@ -10,8 +10,14 @@ import { HomeComponent } from './home/home.component';
 import { PlaceAddComponent } from './places/place-add/place-add.component';
 import { PlaceDetailComponent } from './places/place-detail/place-detail.component';
 import { PlacesComponent } from './places/places.component';
+<<<<<<< Updated upstream
 import { NeedsComponent } from './needs/needs.component';
 import { AddNeedComponent } from './needs/add-need/add-need.component';
+=======
+import { UserAddComponent } from './user/user-add/user-add.component';
+import { UserDetailsComponent } from './user/user-details/user-details.component';
+import { UserComponent } from './user/user.component';
+>>>>>>> Stashed changes
 
 
 const routes: Routes = [
@@ -28,7 +34,10 @@ const routes: Routes = [
   {path: 'login' , component: AccountComponent},
   {path: 'event-detail/:id' , component: EventDetailsComponent},
   {path: 'contactus' , component: ContactUsComponent},
-  {path: 'messages' , component: MessagesComponent}
+  {path: 'messages' , component: MessagesComponent},
+  {path: 'add-user' , component: UserAddComponent},
+  {path: 'users' , component: UserComponent},
+  {path: 'user-detail/:id' , component: UserDetailsComponent}
 ];
 
 @NgModule({

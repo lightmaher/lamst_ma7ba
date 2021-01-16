@@ -21,6 +21,7 @@ namespace lamst_ma7ba_Api.Models
         [ForeignKey("Location")]
         public int PlaceId { get; set; }
         public virtual Place Location { get; set; }
-        
+
+        public List<Join> Joins { get; set; }
     }
 }

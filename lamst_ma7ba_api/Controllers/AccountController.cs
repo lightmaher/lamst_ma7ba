@@ -59,6 +59,7 @@ namespace lamst_ma7ba_Api.Controllers
 
             };
            var resuilt = await _userManager.CreateAsync(admin1, admin1.Password);
+            var admin = _userManager.FindByNameAsync("admin1");
             if (resuilt.Succeeded)
             {
                 return StatusCode(202);

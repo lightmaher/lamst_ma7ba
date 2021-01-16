@@ -10345,19 +10345,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rt\\.nuget\\packages\\": {}
+    "C:\\Users\\nourmaher\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rt\\Commerce-Github\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
+      "projectUniqueName": "F:\\web developer\\Heart_Foundation\\lamst-ma7ba Api\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
       "projectName": "lamst-ma7ba Api",
-      "projectPath": "C:\\Users\\rt\\Commerce-Github\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
-      "packagesPath": "C:\\Users\\rt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rt\\Commerce-Github\\lamst_ma7ba\\lamst_ma7ba_api\\obj\\",
+      "projectPath": "F:\\web developer\\Heart_Foundation\\lamst-ma7ba Api\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
+      "packagesPath": "C:\\Users\\nourmaher\\.nuget\\packages\\",
+      "outputPath": "F:\\web developer\\Heart_Foundation\\lamst-ma7ba Api\\lamst_ma7ba\\lamst_ma7ba_api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\rt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nourmaher\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10369,6 +10369,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -10380,6 +10381,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -10486,7 +10488,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

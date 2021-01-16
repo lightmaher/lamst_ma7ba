@@ -47,13 +47,14 @@ namespace lamst_ma7ba_Api.Models
 
         public async Task<IList<Event>> GetAllEvents()
         {
-            var eves = await _context.Events.Include(c => c.Location).ToListAsync();
+            var eves = await _context.Events.Include(c => c.Location).Include(x => x.Joins).ToListAsync();
             return eves;
         }
 
         public async Task<Event> GetEvent(int id)
         {
-            var evt = await _context.Events.FirstOrDefaultAsync(x => x.Id == id);
+            Event evt = await _context.Events.Include(x => x.Joins).FirstOrDefaultAsync(c => c.Id == id);
+            
             return evt;
         }
 
@@ -68,7 +69,26 @@ namespace lamst_ma7ba_Api.Models
                 }
                 return false;
             } return false;
-        } 
+        }
+
+        public async Task joinDelete(int id)
+        {
+            
+                Join join = await _context.Joins.FirstOrDefaultAsync(x=>x.Id == id);
+                 _context.Joins.Remove(join);
+               await _context.SaveChangesAsync();
+            
+
+        }
+
+        public async Task joinEvent(Join join)
+        {
+            Event evt = _context.Events.FirstOrDefault(x=>x.Id == join.EventId);
+            Join join1 = new Join() { Id = join.Id, EventId = join.EventId, Name = join.Name, PhoneNumber = join.PhoneNumber, Event=evt};
+            await _context.Joins.AddAsync(join1);
+            await _context.SaveChangesAsync();
+        }
+
 
         public async Task UpdateEvent( int id , Event evt)
         {
@@ -85,6 +105,6 @@ namespace lamst_ma7ba_Api.Models
            await _context.AddAsync(ev2);
             await _context.SaveChangesAsync();
         }
-
+       
     }
 }

@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable  } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Evt } from '../_Models/Evt';
+import { Join } from '../_Models/join';
 
 @Injectable({
   providedIn: 'root'
@@ -21,4 +22,11 @@ export class EventService {
   deleteEvent(id: number){
     return this.http.delete(this.baseurl + id);
   }
+  joinevent(join: Join){
+    return this.http.post(this.baseurl + 'join' , join);
+  }
+  joinDelete(id: number){
+    return this.http.delete('https://localhost:44367/api/Events/join/' + id);
+  }
+
 }

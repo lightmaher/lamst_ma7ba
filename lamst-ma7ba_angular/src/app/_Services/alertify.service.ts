@@ -18,6 +18,12 @@ confirm(message: string, okCallback: () => any) {
 success(message: string) {
   alertify.alert().setHeader('').setContent('<h2> لقد تم وصول رسالتك بنجاح <br>سنتواصل معك فى اقرب وقت </h2>').show();
 }
+success_user() {
+  alertify.alert().setHeader('').setContent('<h2> لقد تم وصول بياناتك بنجاح <br>سنتواصل معك فى اقرب وقت </h2>').show();
+}
+succ(message: string){
+ alertify.success(message);
+}
 
 error(message: string) {
   alertify.error(message);
