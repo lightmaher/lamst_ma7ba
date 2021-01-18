@@ -30,6 +30,7 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminComponent } from './admin/admin.component';
 import { MessagesComponent } from './admin/messages/messages.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -50,7 +51,7 @@ export const FORMAT = {
 };
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     NavbarComponent,
     HomeComponent,
@@ -68,7 +69,8 @@ export const FORMAT = {
     ContactUsComponent,
     AdminComponent,
     MessagesComponent,
-  ],
+      AboutUsComponent
+   ],
   imports: [
     IvyCarouselModule,
     MatMomentDateModule,
