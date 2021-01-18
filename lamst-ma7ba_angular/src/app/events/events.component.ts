@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { AccountService } from '../_Services/Account.service';
 import { EventService } from '../_Services/event.service';
@@ -9,18 +10,19 @@ import { EventService } from '../_Services/event.service';
 })
 export class EventsComponent implements OnInit {
 
-  events = {};
-  constructor(private eventservice: EventService, private accountservice: AccountService) { }
+  events = [];
+  constructor(private eventservice: EventService, private accountservice: AccountService, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.get_events();
   }
 get_events(){
-  this.eventservice.getAllEvents().subscribe( res => {
+  this.eventservice.getAllEvents().subscribe( (res: []) => {
      this.events = res;
   });
 }
 loggedin(){
   return this.accountservice.loggedin();
 }
+
 }

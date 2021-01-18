@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using lamst_ma7ba_Api.Models;
 using lamst_ma7ba_Api.Repository.NeedRepository;
@@ -40,7 +42,7 @@ namespace lamst_ma7ba_Api.Controllers
             }
             return BadRequest();
         }
-        [HttpPost]
+        [HttpPut]
         [Route("EditNeed")]
         public async Task<IActionResult> EditNeed(Need model)
         {
@@ -54,5 +56,15 @@ namespace lamst_ma7ba_Api.Controllers
             }
             return BadRequest();
         }
+        [HttpGet]
+        [Route("GetNeed/{id}")]
+        public async Task<ActionResult<Need>> GetNeed(int id)
+        {
+            var need = await _needRepo.GetNeedAsync(id);
+            if (need != null)
+                return need;
+            return null;
+        }
+        
     }
 }

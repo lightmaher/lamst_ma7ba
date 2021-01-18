@@ -18,6 +18,9 @@ export class EventDetailsComponent implements OnInit {
     this.id = this.routes.snapshot.params['id'];
     this.eventdetail();
   }
+joinDelete(id){
+this.event.joinDelete(id).subscribe(res => {window.location.reload(); } );
+}
 eventdetail(){
 this.event.getEvent(this.id).subscribe(
   res => {this.evet = res; }

@@ -1,0 +1,22 @@
+.month-class::before{
+    content: "";
+    border: 1px solid  rgb(228, 228, 240);
+    display: inline-block;
+    width: 20%;
+    margin-left: 50px;
+}
+.month-class::after{
+    content: "";
+    border: 1px solid rgb(228, 228, 240);
+    display: inline-block;
+    width: 20%;
+    margin-right: 50px;
+}
+p{
+    margin: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #212529;
+}

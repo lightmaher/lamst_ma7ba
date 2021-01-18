@@ -59,6 +59,32 @@ namespace lamst_ma7ba_Api.Controllers
             }
             return StatusCode(400);
         }
+        [HttpPost("join")]
+        public async Task<ActionResult> joinEvent(Join join)
+        {
+            if (join != null)
+            {
+                await _repEvent.joinEvent(join);
+                return StatusCode(202);
+            }
+            else
+            {
+                return StatusCode(402);
+            }
+        }
+       [HttpDelete("join/{id}")]
+        public async Task<ActionResult> joinDelete(int id)
+        {
+            if (id != 0)
+            {
+                await _repEvent.joinDelete(id);
+                return StatusCode(202);
+            }
+            else
+            {
+                return StatusCode(402);
+            }
+        }
         [HttpPost("upload"), DisableRequestSizeLimit]
         public IActionResult Upload()
         {

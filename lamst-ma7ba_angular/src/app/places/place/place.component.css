@@ -6,7 +6,7 @@
 }
 .card{
     border-radius: 0;
-    box-shadow: 5px 5px 10px #27318b;
+    box-shadow: 5px 5px 10px #9E9E9E;
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;

@@ -8,6 +8,7 @@ using lamst_ma7ba_Api.Models;
 using lamst_ma7ba_Api.Repository.ContactUsRepository;
 using lamst_ma7ba_Api.Repository.NeedRepository;
 using lamst_ma7ba_Api.Repository.PlaceRepository;
+using lamst_ma7ba_Api.Repository.UserRepository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -51,8 +52,9 @@ namespace lamst_ma7ba_Api
             services.AddScoped<IPlaceRepo , PlaceRepo>();
             services.AddScoped<IContectUsRepoistory, ContactUsRepoistory>();
             services.AddScoped<INeedRepo,NeedRepo>();
+            services.AddScoped<IUserRep, UserRep>();
             services.AddCors();
-
+            services.AddControllers();
             // for identity ->
             IdentityBuilder builder = services.AddIdentityCore<Admin>();
             builder = new IdentityBuilder(builder.UserType, builder.Services);

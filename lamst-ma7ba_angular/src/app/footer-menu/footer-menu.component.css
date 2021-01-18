@@ -4,6 +4,8 @@
     height: 350px;
     position: relative;
     margin-top: 80px;
+    border-top: 2px solid #dc3545;
+    padding-top: 15px;
 }
 .footer .footer-bottom{
     background: #343a40;
@@ -27,7 +29,8 @@
 .footer .footer-content h1,
 .footer .footer-content h2{
     color: #dc3545;
-    font-size: 2.5rem;
+    font-size: 20px !important;
+    font-weight: 700;
 }
 .footer .footer-content .about{
     text-align: right;
@@ -45,6 +48,7 @@
 }
 .footer .footer-content .about h1 span{
     color: #dc3545;
+    
 }
 .footer .footer-content .about .contact span{
     display: block;
@@ -76,8 +80,7 @@
 .footer .footer-content .links ul li{
     display: block;
     font-size: 1.2em;
-    margin-bottom: 8px;
-    width: 30px;
+    margin-bottom: 15px;
     color: #898989!important;
 }
 .footer .footer-content .links ul li:hover{

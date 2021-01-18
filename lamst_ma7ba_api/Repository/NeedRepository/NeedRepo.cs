@@ -63,5 +63,16 @@ namespace lamst_ma7ba_Api.Repository.NeedRepository
         {
             return await _context.Needs.ToListAsync();
         }
+        public async Task<Need> GetNeedAsync(int id)
+        {
+            if (id != 0)
+            {
+                var need = await _context.Needs.FirstOrDefaultAsync(p => p.Id == id);
+                if (need == null)
+                    return null;
+                return need;
+            }
+            return null;
+        }
     }
 }

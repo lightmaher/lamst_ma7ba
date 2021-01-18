@@ -13,7 +13,29 @@
         <h2> للمشاركة برجاء التواصل عبر المحمول على رقم 01091046000</h2>
         <a *ngIf="loggedin()" [routerLink]="['/event-detail',evt.id]" class="btn btn-primary mr-1 text-white">تفاصيل</a>
         <a  *ngIf="loggedin()" (click)="delete(evt.id)" class="btn btn-danger text-white">حذف</a>
-
+        <a *ngIf="!loggedin()" class="btn btn-primary text-white"  data-toggle="modal" data-target="#exampleModalLong"> للمشاركة</a>
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" [hidden]="form">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">للمشاركة</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form class="modal-body" [formGroup]="joinform" >
+              
+                  <input class="form-control mt-2" formControlName="name" placeholder="الاسم">
+                  <input type="number" class="form-control mt-2" formControlName="phoneNumber" placeholder="رقم المحمول">
+                
+             
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                <button type="button" class="btn btn-primary" type="submit" [disabled]="!joinform.valid" (click)="joinEvent()" data-dismiss="modal">تاكيد</button>
+              </div>
+            </form>
+          </div>
+        </div>
 
     </div>
 </div>

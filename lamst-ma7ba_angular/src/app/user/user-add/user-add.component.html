@@ -1,0 +1,29 @@
+<div class="container mt-2 border border-secondary rounded" >
+ <form class="mt-2" [formGroup]="userForm" (ngSubmit)="adduser()">
+<div class="mb-3">
+    <input class="form-control" formControlName="firstName" placeholder="الاسم الاول ">
+</div>
+<div class="mb-3">
+    <input class="form-control" formControlName="secoundName" placeholder="الاسم الثانى">
+</div>
+
+<div class="mb-3">
+    <input type="email" class="form-control" formControlName="email" placeholder="البريد الالكترونى">
+</div>
+
+<div class="mb-3">
+    <input class="form-control" formControlName="job" placeholder="الوظيفة">
+</div>
+<div class="mb-3">
+    <input type="number" class="form-control" formControlName="phoneNumber" placeholder="رقم الهاتف ">
+</div>
+<div class="mb-3">
+    <input class="form-control" formControlName="reason" placeholder="العنوان">
+</div>
+<div class="mb-3">
+    <textarea rows="4" class="form-control" formControlName="comment" placeholder="النشاط الى هتشارك فيه "></textarea>
+</div>
+<button type="submit" class="btn btn-danger btn-lg mb-2" [disabled]="!userForm.valid" > ارسال </button>
+</form>
+
+</div>
