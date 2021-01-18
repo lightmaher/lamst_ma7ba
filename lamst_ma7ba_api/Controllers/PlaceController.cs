@@ -88,25 +88,29 @@ namespace lamst_ma7ba_Api.Controllers
         [DisableRequestSizeLimit]
         public IActionResult Upload()
         {
-            var file = Request.Form.Files[0];
-            var folderName = Path.Combine("Resources" , "Imgaes");
-            var pathToSave = Path.Combine(Directory.GetCurrentDirectory() , folderName);
-            if (file.Length > 0)
+            for (var i = 0; i <= Request.Form.Files.Count; i++)
             {
-                var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
-                var fullPath = Path.Combine(pathToSave, fileName);
-                var url = Path.Combine(folderName, fileName);
-
-                using (var stream = new FileStream(fullPath, FileMode.Create))
+                var file = Request.Form.Files[i];
+                var folderName = Path.Combine("Resources", "Imgaes");
+                var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+                if (file.Length > 0)
                 {
-                    file.CopyTo(stream);
+                    var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                    var fullPath = Path.Combine(pathToSave, fileName);
+                    var url = Path.Combine(folderName, fileName);
+
+                    using (var stream = new FileStream(fullPath, FileMode.Create))
+                    {
+                        file.CopyTo(stream);
+                    }
+                    return Ok(new { url });
                 }
-                return Ok(new { url });
+                else
+                {
+                    return BadRequest();
+                }
             }
-            else
-            {
-                return BadRequest();
-            }
+            return BadRequest();
         }
         }
 }

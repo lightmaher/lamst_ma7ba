@@ -1,16 +1,10 @@
-
-    <form [formGroup] = "uploadForm" (ngSubmit)="onSubmit()">      
+<form [formGroup] = "uploadForm" (ngSubmit)="onSubmit()">      
         <div>
-          <input type="file" name="image" (change)="onFileSelect($event)" />
+          <input type="file" name="image" (change)="onFileSelect($event)" multiple/>
           <button type="submit" class="btn btn-success">اضافة صورة</button>
           <span class="upload" *ngIf="progress > 0">
             {{progress}}%
           </span>
         </div>
-       <!--<div>
-         <span class="upload" *ngIf="message">
-        {{message}}
-      </span> 
-      </div>--> 
-      </form>
+</form>
   
