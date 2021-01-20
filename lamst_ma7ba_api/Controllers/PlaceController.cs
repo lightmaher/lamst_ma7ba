@@ -84,15 +84,15 @@ namespace lamst_ma7ba_Api.Controllers
             return BadRequest();
         }
         [HttpPost]
-        [Route("Upload")]
-        [DisableRequestSizeLimit]
+        [HttpPost("upload"), DisableRequestSizeLimit]
         public IActionResult Upload()
         {
-            for (var i = 0; i <= Request.Form.Files.Count; i++)
+            try
             {
-                var file = Request.Form.Files[i];
-                var folderName = Path.Combine("Resources", "Imgaes");
+                var file = Request.Form.Files[0];
+                var folderName = System.IO.Path.Combine("wwwroot");
                 var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+
                 if (file.Length > 0)
                 {
                     var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
@@ -103,6 +103,7 @@ namespace lamst_ma7ba_Api.Controllers
                     {
                         file.CopyTo(stream);
                     }
+
                     return Ok(new { url });
                 }
                 else
@@ -110,7 +111,11 @@ namespace lamst_ma7ba_Api.Controllers
                     return BadRequest();
                 }
             }
-            return BadRequest();
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex}");
+            }
         }
+    }
         }
-}
+

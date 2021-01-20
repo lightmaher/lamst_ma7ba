@@ -8,9 +8,14 @@ import { AddEventComponent } from './events/add-event/add-event.component';
 import { EventDetailsComponent } from './events/event/event-details/event-details.component';
 import { EventsComponent } from './events/events.component';
 import { HomeComponent } from './home/home.component';
+import { AddNeedComponent } from './needs/add-need/add-need.component';
+import { NeedsComponent } from './needs/needs.component';
 import { PlaceAddComponent } from './places/place-add/place-add.component';
 import { PlaceDetailComponent } from './places/place-detail/place-detail.component';
 import { PlacesComponent } from './places/places.component';
+import { UserAddComponent } from './user/user-add/user-add.component';
+import { UserDetailsComponent } from './user/user-details/user-details.component';
+import { UserComponent } from './user/user.component';
 
 
 const routes: Routes = [
@@ -25,7 +30,13 @@ const routes: Routes = [
   {path: 'event-detail/:id' , component: EventDetailsComponent},
   {path: 'contactus' , component: ContactUsComponent},
   {path: 'messages' , component: MessagesComponent},
-  {path: 'about' , component: AboutUsComponent}
+  {path: 'about' , component: AboutUsComponent},
+  {path: 'users' , component: UserComponent },
+  {path: 'add-user' , component: UserAddComponent},
+  {path: 'needs' , component: NeedsComponent},
+  {path: 'add-need' , component: AddNeedComponent},
+  {path: 'user-detail/:id' , component: UserDetailsComponent},
+  {path: 'aboutus' , component: AboutUsComponent}
 ];
 
 @NgModule({

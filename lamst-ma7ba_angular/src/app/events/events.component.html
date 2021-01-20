@@ -1,9 +1,15 @@
 <div class="container">
-    <div>
-        <div class="row" style="direction: rtl;">
-            <app-event *ngFor="let item of events" [evt]="item"></app-event>
+    <div class="row">
+        <div>
+            <div class="row" style="direction: rtl;">
+                <app-event *ngFor="let item of events" [evt]="item"></app-event>
+            </div>
+    
+            <a *ngIf="loggedin()" routerLink="/addevent" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;" class="btn btn-light mt-3"> اضافة فاعلية جديدة</a>
         </div>
-
-        <a *ngIf="loggedin()" routerLink="/addevent" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;" class="btn btn-light mt-3"> اضافة فاعلية جديدة</a>
-    </div>
+        <hr>
+       
+       
+    
+    
 </div>

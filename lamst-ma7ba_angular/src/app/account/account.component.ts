@@ -38,7 +38,7 @@ createForm(){
     this.accountservice.login(this.loginForm.value).subscribe(
       res => { this.route.navigateByUrl('/');
     }, error => {
-      console.log('error');
+     alert('user name or password is wrong');
     }
     );
   }

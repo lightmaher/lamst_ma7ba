@@ -2,3 +2,8 @@
     z-index: -1;
     outline: none;
 }
+body {
+    font-family: cairo;
+    direction: ltr;
+    text-align: left;
+}

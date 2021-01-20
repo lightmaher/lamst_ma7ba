@@ -4,8 +4,6 @@ import { Need } from '../../_Models/need';
 import { HttpClient } from '@angular/common/http';
 import { NeedService } from '../../_Services/need.service';
 import { ActivatedRoute } from '@angular/router';
-
-
 @Component({
   selector: 'app-add-need',
   templateUrl: './add-need.component.html',
@@ -22,16 +20,16 @@ export class AddNeedComponent implements OnInit {
   message: string;
   messageValidate =  {
     month: {
-      'required': 'الشهر مطلوب'
+      required: 'الشهر مطلوب'
     },
     description: {
-      'required': 'الاحتياجات مطلوبة'
+      required: 'الاحتياجات مطلوبة'
     }
   };
   constructor(private fb: FormBuilder,
-     private http: HttpClient,
-     private needService: NeedService,
-     private activeRoute: ActivatedRoute) { }
+              private http: HttpClient,
+              private needService: NeedService,
+              private activeRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.message = '';
@@ -44,7 +42,7 @@ export class AddNeedComponent implements OnInit {
     this.need = {
       id: 0,
       month: '',
-      description:''
+      description: ''
     };
     this.activeRoute.paramMap.subscribe(params => {
       const id = +params.get('id');
@@ -78,7 +76,7 @@ export class AddNeedComponent implements OnInit {
   }
 
   AddNeedData(){
-    if(this.need !== null){
+    if (this.need !== null){
       this.needForm.setValue({
         month: this.need.month,
         description: this.need.description

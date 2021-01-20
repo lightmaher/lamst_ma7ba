@@ -8,3 +8,5 @@
     font-family: cairo;
     font-weight: bold;
   }
+  p { font-weight: 300;
+  font-size: larger;}

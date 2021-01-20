@@ -1,10 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -31,7 +30,11 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminComponent } from './admin/admin.component';
 import { MessagesComponent } from './admin/messages/messages.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-
+import { AddNeedComponent } from './needs/add-need/add-need.component';
+import { UserAddComponent } from './user/user-add/user-add.component';
+import { UserComponent } from './user/user.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 
@@ -51,7 +54,7 @@ export const FORMAT = {
 };
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
@@ -69,7 +72,11 @@ export const FORMAT = {
     ContactUsComponent,
     AdminComponent,
     MessagesComponent,
-      AboutUsComponent
+    AboutUsComponent,
+    AddNeedComponent,
+    UserAddComponent,
+    UserComponent,
+    SidebarComponent
    ],
   imports: [
     IvyCarouselModule,
@@ -77,6 +84,7 @@ export const FORMAT = {
     BrowserModule,
     HttpClientModule,
     ChartsModule,
+    NgxPaginationModule,
     JwtModule.forRoot({
       config: {
         // tslint:disable-next-line:object-literal-shorthand
@@ -86,13 +94,13 @@ export const FORMAT = {
       },
     }),
     AppRoutingModule,
-    ReactiveFormsModule,
     MatDatepickerModule,
     FormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatNativeDateModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [MatDatepickerModule, MatNativeDateModule
   ],

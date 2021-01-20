@@ -10,7 +10,6 @@
         <!--<p class="card-text">{{evt.description}}</p>-->
         <h2> هنحتاج اليوم ده {{evt.number}} متطوع </h2>
         <h2> الاحتياجات : {{evt.needs}}</h2>
-        <h2> للمشاركة برجاء التواصل عبر المحمول على رقم 01091046000</h2>
         <a *ngIf="loggedin()" [routerLink]="['/event-detail',evt.id]" class="btn btn-primary mr-1 text-white">تفاصيل</a>
         <a  *ngIf="loggedin()" (click)="delete(evt.id)" class="btn btn-danger text-white">حذف</a>
         <a *ngIf="!loggedin()" class="btn btn-primary text-white"  data-toggle="modal" data-target="#exampleModalLong"> للمشاركة</a>

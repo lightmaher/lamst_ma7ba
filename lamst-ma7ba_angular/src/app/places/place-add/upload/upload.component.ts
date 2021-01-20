@@ -39,10 +39,8 @@ export class UploadComponent implements OnInit {
 
   onFileSelect(event){
     if (event.target.files.length > 0){
-      for(var i = 0 ; i < File.length ; i++){
-        const file = event.target.files[i];
+        const file = event.target.files[0];
         this.uploadForm.get('image').setValue(file);
-      }
     }
   }
 }
