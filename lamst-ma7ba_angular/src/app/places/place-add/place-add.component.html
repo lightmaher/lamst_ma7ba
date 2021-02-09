@@ -36,9 +36,15 @@
 
           <div class="form-group">
             <app-upload (onUploadFinished)="uploadFinished($event)"></app-upload>
+            
+          </div>
+          <div class="form-group">
+            <app-upload-place (onUploadFinished)="uploadMultipleImages($event)"></app-upload-place>
+            
           </div>
           
-          <button type="submit" [disabled]="!placeForm.valid" class="btn btn-primary btn-block mt-2">{{btnTitle}}</button>
+          <button type="submit" [disabled]="!placeForm.valid" class="btn btn-block mt-2" 
+          style="background-color: #27318b;color: white;">{{btnTitle}}</button>
       </form>
       </div>
        

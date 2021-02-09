@@ -24,7 +24,8 @@ namespace lamst_ma7ba_Api.Repository.PlaceRepository
             var place = new Place { 
                 Title = model.Title,
                 Description = model.Description,
-                url = model.url
+                url = model.url,
+                placeGalleries = model.placeGalleries
             };
             await _context.places.AddAsync(place);
             await _context.SaveChangesAsync();
@@ -71,7 +72,7 @@ namespace lamst_ma7ba_Api.Repository.PlaceRepository
         {
             if (id !=0)
             {
-                var place = await _context.places.FirstOrDefaultAsync(p => p.PlaceId == id);
+                var place = await _context.places.Include(p => p.placeGalleries).FirstOrDefaultAsync(p => p.PlaceId == id);
                 if (place == null)
                     return null;
                 return place;

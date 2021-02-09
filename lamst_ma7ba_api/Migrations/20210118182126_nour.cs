@@ -7,7 +7,7 @@ namespace lamst_ma7ba_Api.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
+           /* migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
                 {
@@ -20,7 +20,7 @@ namespace lamst_ma7ba_Api.Migrations
                 {
                     table.PrimaryKey("PK_AspNetRoles", x => x.Id);
                 });
-
+                
             migrationBuilder.CreateTable(
                 name: "AspNetUsers",
                 columns: table => new
@@ -311,7 +311,7 @@ namespace lamst_ma7ba_Api.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Joins_EventId",
                 table: "Joins",
-                column: "EventId");
+                column: "EventId");*/
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

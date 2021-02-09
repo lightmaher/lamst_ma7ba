@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Place } from '../../_Models/place';
+import { Place, PlaceGallery } from '../../_Models/place';
 import { PlaceService } from '../../_Services/place.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -15,6 +15,7 @@ export class PlaceAddComponent implements OnInit {
               private placeS: PlaceService ,
               private activeRoute: ActivatedRoute) { }
   response: {url: ''};
+  urls: PlaceGallery[] = [];
   Editurl: string;
   message: string;
   placeId = 0;
@@ -44,7 +45,8 @@ export class PlaceAddComponent implements OnInit {
      title: '',
      url: '',
      description: '',
-     events : []
+     events : [],
+     placeGalleries: []
    };
     this.activeRoute.paramMap.subscribe(params => {
      const id = +params.get('id');
@@ -65,6 +67,12 @@ export class PlaceAddComponent implements OnInit {
   add(){
     this.ValidateModel();
     if (!this.isEditMode){
+      for(var i = 0; i < this.urls.length; i++){
+        this.place.placeGalleries[i].id = this.urls[i].id;
+        this.place.placeGalleries[i].name = this.urls[i].name;
+        this.place.placeGalleries[i].url = this.urls[i].url;
+      }
+      console.log(this.place);
       this.place.url = this.response.url;
       this.placeS.addPlace(this.place).subscribe(x => {
         this.message = 'Place has been added succesfuly';
@@ -100,6 +108,17 @@ export class PlaceAddComponent implements OnInit {
     this.place.description = this.placeForm.value.description;
   }
   uploadFinished(event){
+    console.log(event);
     this.response = event;
+  }
+  uploadMultipleImages(event){
+    console.log(event);
+    if(event.galleries.length > 0){
+      for(var i =0; i < event.galleries.length; i++){
+        this.place.placeGalleries.push(event.galleries[i]);    
+        }
+    }
+    
+    console.log(this.place.placeGalleries);
   }
 }

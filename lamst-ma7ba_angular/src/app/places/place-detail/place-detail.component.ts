@@ -43,6 +43,7 @@ export class PlaceDetailComponent implements OnInit {
     const id = +this.activeRoute.snapshot.params['id'];
     this.placeS.GetPlace(id).subscribe(x => {
       this.place = x;
+      console.log(this.place.placeGalleries);
     } , err => console.log(err));
     this.showevents();
 

@@ -1,17 +1,19 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient, HttpEventType } from '@angular/common/http';
+import { PlaceGallery } from '../../../_Models/place';
 
 @Component({
-  selector: 'app-upload',
-  templateUrl: './upload.component.html',
-  styleUrls: ['./upload.component.css']
+  selector: 'app-upload-place',
+  templateUrl: './upload-place.component.html',
+  styleUrls: ['./upload-place.component.css']
 })
-export class UploadComponent implements OnInit {
+export class UploadPlaceComponent implements OnInit {
 
   uploadForm: FormGroup;
-  baseUrl = 'https://localhost:44367/api/place/Upload';
+  baseUrl = 'https://localhost:44367/api/place/UploadGallery';
   public progress: number;
+  myFiles: string[] = [];
   // tslint:disable-next-line: no-output-on-prefix
   @Output() onUploadFinished = new EventEmitter();
 
@@ -24,13 +26,13 @@ export class UploadComponent implements OnInit {
   }
   onSubmit(){
     const formData = new FormData();
-    formData.append('file' , this.uploadForm.get('image').value);
+    for (var i = 0; i < this.myFiles.length; i++) {  
+      formData.append("file" , this.myFiles[i]);  
+    }
+    console.log(formData);
     this.http.post(this.baseUrl , formData , {reportProgress: true , observe: 'events'}).
     subscribe(event => {
-      if (event.type === HttpEventType.UploadProgress){
-        this.progress = Math.round(100 * event.loaded / event.total);
-      }
-      else if (event.type === HttpEventType.Response){
+      if (event.type === HttpEventType.Response){
         this.onUploadFinished.emit(event.body);
         console.log(event.body);
       }
@@ -38,9 +40,13 @@ export class UploadComponent implements OnInit {
   }
 
   onFileSelect(event){
-    if (event.target.files.length > 0){
-        const file = event.target.files[0];
-        this.uploadForm.get('image').setValue(file);
+    const gallery = event.target.files;
+    if (gallery.length > 0){
+      for(let i= 0; i < gallery.length; i++){
+        const file = event.target.files[i];
+        this.myFiles.push(file);
+        console.log(event);
+      }
     }
   }
 }

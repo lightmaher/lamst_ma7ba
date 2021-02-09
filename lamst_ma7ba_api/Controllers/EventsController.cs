@@ -89,7 +89,7 @@ namespace lamst_ma7ba_Api.Controllers
         public IActionResult Upload()
         {
             try
-            {
+             {
                 var file = Request.Form.Files[0];
                 var folderName = System.IO.Path.Combine("wwwroot");
                 var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);

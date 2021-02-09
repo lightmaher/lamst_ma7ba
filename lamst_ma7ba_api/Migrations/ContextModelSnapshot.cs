@@ -341,6 +341,29 @@ namespace lamst_ma7ba_Api.Migrations
                     b.ToTable("places");
                 });
 
+            modelBuilder.Entity("lamst_ma7ba_Api.Models.PlaceGallery", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PlaceId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PlaceId");
+
+                    b.ToTable("placeGalleries");
+                });
+
             modelBuilder.Entity("lamst_ma7ba_Api.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -445,6 +468,15 @@ namespace lamst_ma7ba_Api.Migrations
                     b.HasOne("lamst_ma7ba_Api.Models.Event", "Event")
                         .WithMany("Joins")
                         .HasForeignKey("EventId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("lamst_ma7ba_Api.Models.PlaceGallery", b =>
+                {
+                    b.HasOne("lamst_ma7ba_Api.Models.Place", "place")
+                        .WithMany("placeGalleries")
+                        .HasForeignKey("PlaceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

@@ -83,39 +83,51 @@ namespace lamst_ma7ba_Api.Controllers
             }
             return BadRequest();
         }
-        [HttpPost]
-        [HttpPost("upload"), DisableRequestSizeLimit]
-        public IActionResult Upload()
+        [HttpPost("UploadGallery"), DisableRequestSizeLimit]
+        public ActionResult<List<PlaceGallery>> UploadGallery()
         {
             try
             {
-                var file = Request.Form.Files[0];
-                var folderName = System.IO.Path.Combine("wwwroot");
-                var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
-
-                if (file.Length > 0)
+                var files = Request.Form.Files;
+                string url = null;
+                var galleries = new List<PlaceGallery>();
+                foreach (var file in files)
                 {
-                    var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
-                    var fullPath = Path.Combine(pathToSave, fileName);
-                    var url = Path.Combine(folderName, fileName);
+                    var folderName = System.IO.Path.Combine("wwwroot");
+                    var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
 
-                    using (var stream = new FileStream(fullPath, FileMode.Create))
+                    if (file.Length > 0)
                     {
-                        file.CopyTo(stream);
+                        var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                        var fullPath = Path.Combine(pathToSave, fileName);
+                        url = Path.Combine(folderName, fileName);
+
+                        using (var stream = new FileStream(fullPath, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                        }
+                    }
+                    else
+                    {
+                        return BadRequest();
                     }
 
-                    return Ok(new { url });
+                    var gallery = new PlaceGallery
+                    {
+                        Name = file.FileName,
+                        Url = url
+                    };
+                    galleries.Add(gallery);
                 }
-                else
-                {
-                    return BadRequest();
-                }
+
+                return Ok(new { galleries});
             }
+
             catch (Exception ex)
             {
                 return StatusCode(500, $"Internal server error: {ex}");
             }
         }
     }
-        }
+}
 

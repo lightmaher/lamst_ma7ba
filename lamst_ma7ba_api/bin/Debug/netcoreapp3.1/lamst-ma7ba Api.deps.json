@@ -5,12 +5,13 @@
   },
   "compilationOptions": {
     "defines": [
+      "DEBUG",
       "TRACE",
       "DEBUG",
       "NETCOREAPP",
       "NETCOREAPP3_1"
     ],
-    "languageVersion": "8.0",
+    "languageVersion": "",
     "platform": "",
     "allowUnsafe": false,
     "warningsAsErrors": false,

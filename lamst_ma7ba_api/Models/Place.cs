@@ -19,5 +19,8 @@ namespace lamst_ma7ba_Api.Models
         [Required]
         public string Description { get; set; }
         public IList<Event> Events { get; set; }
+        [NotMapped]
+        public IFormFileCollection files { get; set; }
+        public ICollection<PlaceGallery> placeGalleries { get; set; }
     }
 }

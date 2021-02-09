@@ -35,6 +35,7 @@ import { UserAddComponent } from './user/user-add/user-add.component';
 import { UserComponent } from './user/user.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { UploadPlaceComponent } from './places/place-add/upload-place/upload-place.component';
 
 
 
@@ -65,6 +66,7 @@ export const FORMAT = {
     PlacesComponent,
     PlaceAddComponent,
     PlaceDetailComponent,
+    UploadPlaceComponent,
     PlaceComponent,
     AccountComponent,
     FooterMenuComponent,
