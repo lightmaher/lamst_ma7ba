@@ -17,12 +17,6 @@ export class AccountComponent implements OnInit {
  loginForm: FormGroup;
   ngOnInit(): void {
     this.createForm();
-    this.createAdmin();
-  }
-  createAdmin(){
-    return this.http.get('https://localhost:44367/api/Account/createadmin').subscribe(
-      res => {console.log('succ'); } , err => {console.log('error'); }
-    );
   }
 createForm(){
  this.loginForm = this.fb.group(

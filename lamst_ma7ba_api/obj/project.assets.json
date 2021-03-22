@@ -10350,11 +10350,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\web developer\\Heart_Foundation\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
+      "projectUniqueName": "F:\\web developer\\heartmix\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
       "projectName": "lamst-ma7ba Api",
-      "projectPath": "F:\\web developer\\Heart_Foundation\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
+      "projectPath": "F:\\web developer\\heartmix\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
       "packagesPath": "C:\\Users\\nourmaher\\.nuget\\packages\\",
-      "outputPath": "F:\\web developer\\Heart_Foundation\\lamst_ma7ba\\lamst_ma7ba_api\\obj\\",
+      "outputPath": "F:\\web developer\\heartmix\\lamst_ma7ba_api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nourmaher\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -21,11 +21,11 @@ import {JwtModule} from '@auth0/angular-jwt';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatNativeDateModule } from '@angular/material/core';
+import { DateAdapter, MatNativeDateModule, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
 import { FooterMenuComponent } from './footer-menu/footer-menu.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { EventDetailsComponent } from './events/event/event-details/event-details.component';
-import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { MatMomentDateModule, MomentDateAdapter } from '@angular/material-moment-adapter';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AdminComponent } from './admin/admin.component';
 import { MessagesComponent } from './admin/messages/messages.component';
@@ -35,24 +35,16 @@ import { UserAddComponent } from './user/user-add/user-add.component';
 import { UserComponent } from './user/user.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {NgxPaginationModule} from 'ngx-pagination';
-import { UploadPlaceComponent } from './places/place-add/upload-place/upload-place.component';
+import {MatCardModule} from '@angular/material/card';
+import { ImagesComponent } from './images/images.component';
+import { AddImageComponent } from './images/add-image/add-image.component';
+import { DonateComponent } from './donate/donate.component';
 
 
 
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
-export const FORMAT = {
-  parse: {
-      dateInput: 'DD-MM-YYYY',
-  },
-  display: {
-      dateInput: 'DD-MM-YYYY',
-      monthYearLabel: 'MMM YYYY',
-      dateA11yLabel: 'LL',
-      monthYearA11yLabel: 'MMMM YYYY',
-  },
-};
 
 @NgModule({
   declarations: [
@@ -66,7 +58,6 @@ export const FORMAT = {
     PlacesComponent,
     PlaceAddComponent,
     PlaceDetailComponent,
-    UploadPlaceComponent,
     PlaceComponent,
     AccountComponent,
     FooterMenuComponent,
@@ -78,7 +69,10 @@ export const FORMAT = {
     AddNeedComponent,
     UserAddComponent,
     UserComponent,
-    SidebarComponent
+    SidebarComponent,
+    ImagesComponent,
+    AddImageComponent,
+    DonateComponent
    ],
   imports: [
     IvyCarouselModule,
@@ -86,6 +80,7 @@ export const FORMAT = {
     BrowserModule,
     HttpClientModule,
     ChartsModule,
+    MatCardModule,
     NgxPaginationModule,
     JwtModule.forRoot({
       config: {
@@ -104,7 +99,7 @@ export const FORMAT = {
     MatInputModule,
     ReactiveFormsModule
   ],
-  providers: [MatDatepickerModule, MatNativeDateModule
+  providers: [
   ],
   bootstrap: [AppComponent]
 })

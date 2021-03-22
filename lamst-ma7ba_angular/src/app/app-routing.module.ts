@@ -1,13 +1,16 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { AccountComponent } from './account/account.component';
 import { MessagesComponent } from './admin/messages/messages.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { DonateComponent } from './donate/donate.component';
 import { AddEventComponent } from './events/add-event/add-event.component';
 import { EventDetailsComponent } from './events/event/event-details/event-details.component';
 import { EventsComponent } from './events/events.component';
 import { HomeComponent } from './home/home.component';
+import { AddImageComponent } from './images/add-image/add-image.component';
+import { ImagesComponent } from './images/images.component';
 import { AddNeedComponent } from './needs/add-need/add-need.component';
 import { NeedsComponent } from './needs/needs.component';
 import { PlaceAddComponent } from './places/place-add/place-add.component';
@@ -36,7 +39,11 @@ const routes: Routes = [
   {path: 'needs' , component: NeedsComponent},
   {path: 'add-need' , component: AddNeedComponent},
   {path: 'user-detail/:id' , component: UserDetailsComponent},
-  {path: 'aboutus' , component: AboutUsComponent}
+  {path: 'aboutus' , component: AboutUsComponent},
+  {path: 'home' , component: HomeComponent},
+  {path: 'images', component: ImagesComponent},
+  {path: 'add-image' , component: AddImageComponent},
+  {path: 'donate' , component: DonateComponent}
 ];
 
 @NgModule({

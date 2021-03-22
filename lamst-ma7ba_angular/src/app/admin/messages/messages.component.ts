@@ -21,6 +21,6 @@ getMessages(){
   });
 }
 onDelete(id: number){
-this.messageservice.deleteMessage(id).subscribe( res => { this.route.navigate(['messages']); } , err => {console.log('error'); } );
+this.messageservice.deleteMessage(id).subscribe( res => { window.location.reload(); } , err => {console.log('error'); } );
 }
 }

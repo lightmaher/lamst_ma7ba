@@ -1,9 +1,17 @@
 #carouselExampleIndicators{
     z-index: -1;
     outline: none;
-}
-body {
-    font-family: cairo;
     direction: ltr;
-    text-align: left;
 }
+h1,p,h2,a,button{ 
+    font-family: cairo;
+}
+.example-card {
+    max-width: 350px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  
