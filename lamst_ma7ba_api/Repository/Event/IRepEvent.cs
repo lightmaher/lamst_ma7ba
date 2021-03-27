@@ -8,6 +8,8 @@ namespace lamst_ma7ba_Api.Models
 {
   public interface IRepEvent
     {
+        public Task<IList<Event>> getHomeEvents();
+
         public Task< IList<Event>> GetAllEvents();
         public Task<Event> GetEvent(int id);
 

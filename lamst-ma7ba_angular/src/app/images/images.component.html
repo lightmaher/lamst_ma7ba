@@ -1,0 +1,19 @@
+<div class="container">
+
+    <div class="d-flex justify-content-center">
+        <h1 class="heading" style="width: fit-content;"> صور فاعليتنا <hr style="height: 10px;"></h1>
+    </div>    
+            <div class="gallery" >
+                <div *ngFor="let image of images |  paginate: {  itemsPerPage: 9,
+                    currentPage: p}" >
+                <div class="gallery-item border border-black col" style="width: 500px; height: 400px; ;">
+                    <img class="gallery-image" [src]='createImgPath(image.url)'>
+                </div>
+                <h2 class="text-center bg-light mt-2" style="font-family: cairo; font-weight: bold;"> {{image.title}}</h2>
+                <button class="btn btn-danger" (click)='delete_image(image.id)'  [hidden]="!login()"> Delete </button>
+            </div>
+        <button class="btn btn-info mt-2 mb-2" routerLink="/add-image" [hidden]="!login()"> Add Photo </button>
+         </div>
+         <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+    </div>
+ 

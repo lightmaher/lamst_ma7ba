@@ -5,7 +5,7 @@ id: number;
 title: string;
 description: string;
 url: string;
-date: Date;
+date: string;
 placeId: number;
 location: Place;
 number: number;

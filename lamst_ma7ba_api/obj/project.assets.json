@@ -10350,11 +10350,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rt\\lamst_ma7ba_Git\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
+      "projectUniqueName": "F:\\New folder (2)\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
       "projectName": "lamst-ma7ba Api",
-      "projectPath": "C:\\Users\\rt\\lamst_ma7ba_Git\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
+      "projectPath": "F:\\New folder (2)\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
       "packagesPath": "C:\\Users\\rt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rt\\lamst_ma7ba_Git\\lamst_ma7ba\\lamst_ma7ba_api\\obj\\",
+      "outputPath": "F:\\New folder (2)\\lamst_ma7ba_api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rt\\AppData\\Roaming\\NuGet\\NuGet.Config",

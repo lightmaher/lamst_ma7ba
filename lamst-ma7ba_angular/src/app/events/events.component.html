@@ -1,15 +1,11 @@
 <div class="container">
-    <div class="row">
         <div>
+            <button class="btn btn-info mt-3 btn-lg" routerLink="/addevent" *ngIf="loggedin()"> اضافة حدث </button>
             <div class="row" style="direction: rtl;">
-                <app-event *ngFor="let item of events" [evt]="item"></app-event>
+              
+                <app-event *ngFor="let item of events | paginate: {  itemsPerPage: 9,
+                    currentPage: p}" [evt]="item"></app-event>
             </div>
-    
-            <a *ngIf="loggedin()" routerLink="/addevent" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large;" class="btn btn-light mt-3"> اضافة فاعلية جديدة</a>
+            <hr>
+            <pagination-controls (pageChange)="p = $event" ></pagination-controls>
         </div>
-        <hr>
-       
-       
-    
-    
-</div>

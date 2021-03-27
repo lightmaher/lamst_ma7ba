@@ -43,7 +43,8 @@ export class AddEventComponent implements OnInit {
   this.event = Object.assign({}, this.addForm.value);
   this.event.url = this.response.url;
   this.eventservice.addEvent(this.event).subscribe(
-    res => {  this.rout.navigate(['/events']); } , error => {
+    res => { console.log(this.event),
+       this.rout.navigate(['/events']); } , error => {
       console.log('error');
     }
   );

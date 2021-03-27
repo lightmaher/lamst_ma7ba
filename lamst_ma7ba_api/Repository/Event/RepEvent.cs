@@ -19,6 +19,12 @@ namespace lamst_ma7ba_Api.Models
         {
             _context = context;
         }
+        public async Task<IList<Event>> getHomeEvents()
+        {
+
+            var resualt = await _context.Events.Include(c => c.Location).Take(3).OrderBy(x => x.Date).ToListAsync();
+            return resualt;
+        }
 
         public async Task AddEvent(Event Event)
         {
@@ -99,7 +105,7 @@ namespace lamst_ma7ba_Api.Models
                 Title = evt.Title,
                 Description = evt.Description,
                 Location = evt.Location,
-                Date = DateTime.Now
+                Date = DateTime.Now.ToString()
             };
              _context.Remove(evt1);
            await _context.AddAsync(ev2);

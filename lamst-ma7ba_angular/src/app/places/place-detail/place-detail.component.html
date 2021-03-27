@@ -11,7 +11,7 @@
     </div>
 
     <div class="row row-content ">
-        <div class="col-12 col-ms-7 col-md-6">
+        <div class="col-12 col-md-6">
             <h2  style="color: #27318b; font-weight: bold; font-size: 28px;">نبذة عن المكان</h2>
             <p class="card-text" style="font-size: 16px;">{{place.description}}</p>
             <button *ngIf="loggedin()" class="btn btn-outline-primary mr-2"
@@ -23,23 +23,19 @@
             <button class="btn btn-outline-danger" *ngIf="isAdmin()" type="button" (click)="onDelete(product.productId)">  Delete </button>   -->           
         </div>
         <div class="col-12 col-md-6">
-        <div class="row">
-            <div class="col-6 col-md-12">
                 <img [src]="createImgPath(place.url)" class="mx-auto d-block img-fluid img-thumbnail" 
                 alt="profile picture" height="200" style="max-width: 350px;">
-            </div>
-            <div class="col-6 col-md-12">
-            <div class="row mt-3 ">
-                <div class="col-6 col-md-3 my-2" *ngFor="let gallery of place.placeGalleries">
-                    <img [src]="createImgPath(gallery.url)" class="mx-auto 
-                    d-block img-fluid img-thumbnail" 
-                    alt="profile picture" height="100" style="max-width: 100px;">
+        </div>
+      
+            <div class="row no-gutters mt-3 mr-3">
+                <div *ngFor="let gallery of place.placeGalleries">
+                    <img [src]="createImgPath(gallery.url)" class="img-thumbnail" 
+                    alt="profile picture" style="width: 100px; height: 70px;">
                 </div>
-            </div>
-            </div>
+                
+        </div>
            
-        </div>
-        </div>
+       
     </div>
 
     <div class="rwo row-content align-items-center">
@@ -63,6 +59,7 @@
                 </div>
             </div>
         </div>
+           <!--
             <div class="border text-center border-primary rounded" style="display: block; width: 50%;margin-right: 200px;">
                 <canvas baseChart 
                 [datasets]="barChartData"
@@ -71,5 +68,6 @@
                 [legend]="barChartLegend"
                 [chartType]="barChartType"></canvas>
             </div>
+           --> 
     </div> 
 </div>

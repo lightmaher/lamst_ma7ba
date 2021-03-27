@@ -91,11 +91,12 @@
 }
 .footer .footer-content .contact-us .contact-input{
     background: #272727;
-    color: #bebbdb;
-    line-height: 1.5em;
+    color: white;
+    line-height: 2em;
     margin-bottom: 10px;
     padding: .7em 1.2em;
     border: none;
+    outline: none;
 }
 
 .footer .footer-content .contact-us .contact-input:focus{

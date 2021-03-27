@@ -1,7 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient, HttpEventType } from '@angular/common/http';
-import { PlaceGallery } from '../../../_Models/place';
 
 @Component({
   selector: 'app-upload-place',

@@ -8,6 +8,8 @@ namespace lamst_ma7ba_Api.Repository.PlaceRepository
 {
     public interface IPlaceRepo
     {
+        Task<IList<Place>> getHomePlacesAsync();
+
         Task<IEnumerable<Place>> GetAllPlacesAsync();
         Task<Place> GetPlaceAsync(int id);
         Task<Place> AddPlaceAsync(Place model);

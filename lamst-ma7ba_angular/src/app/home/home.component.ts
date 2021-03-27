@@ -1,5 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Evt } from '../_Models/Evt';
+import { Place } from '../_Models/place';
+import { HomeService } from '../_Services/home.service';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
-
+  constructor(private http: HttpClient, private homeservice: HomeService) { }
+  events: Evt [];
+  places: Place [];
   ngOnInit(): void {
+    this.getPlaces();
+    this.getEvenst();
   }
+  getPlaces(){
+    this.homeservice.getPlaces().subscribe((res: Place[]) => this.places = res);
+  }
+  public createImgPath = (server: string) => {
+    return `https://localhost:44367/${server}`;
+  }
+getEvenst(){
+  this.homeservice.getEvents().subscribe((res: Evt[]) => this.events  = res );
+}
 }

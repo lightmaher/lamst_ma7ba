@@ -9,7 +9,7 @@ import { EventService } from '../_Services/event.service';
   styleUrls: ['./events.component.css']
 })
 export class EventsComponent implements OnInit {
-
+  p = 1;
   events = [];
   constructor(private eventservice: EventService, private accountservice: AccountService, private http: HttpClient) { }
 

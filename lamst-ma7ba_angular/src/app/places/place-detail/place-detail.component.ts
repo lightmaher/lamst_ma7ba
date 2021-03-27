@@ -19,7 +19,7 @@ export class PlaceDetailComponent implements OnInit {
   evt: Evt;
   nid: number;
   fevet: Evt[];
-  public barChartOptions = {
+  /*public barChartOptions = {
     scaleShowVerticalLines: false,
     responsive: true,
     fill: true
@@ -31,7 +31,7 @@ export class PlaceDetailComponent implements OnInit {
     {data: [65 , 66 , 98 , 88 , 99] , label: 'Seria A'},
     {data: [44 , 55 , 66 , 77], label: 'Seria B'}
   ];
-
+*/
   constructor(private placeS: PlaceService ,
               private activeRoute: ActivatedRoute ,
               private eventsservice: EventService,
