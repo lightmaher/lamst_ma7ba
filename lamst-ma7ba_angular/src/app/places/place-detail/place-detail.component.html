@@ -40,11 +40,12 @@
 
     <div class="rwo row-content align-items-center">
         <h1 class="text-center">الزيارات القادمة</h1>
+        <hr style="width: 20%; border: 2px solid #d8d8d8; border-radius: 10px;">
         <div *ngFor="let event of fevet" class="row-content align-items-center">
-            <hr style="width: 20%; border: 2px solid #d8d8d8; border-radius: 10px;">
+           
             <div class="offset-md-1 col-md-9 col-xs-12">
                 <div class="media border border-primary rounded" >
-                    <div class="media-body row pl-3 pt-1 pb-1 align-items-center">
+                    <div class="media-body row pr-3 pt-1 pb-1 align-items-center">
                         <div class="col-md-8">
                             <h2 class="mt-0" style="color: #27318b; font-weight: bold;">{{event.title}}
                             </h2>

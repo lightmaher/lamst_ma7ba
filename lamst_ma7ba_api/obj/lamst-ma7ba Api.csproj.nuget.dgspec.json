@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\New folder (2)\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj": {}
+    "F:\\web developer\\Heart_Foundation\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj": {}
   },
   "projects": {
-    "F:\\New folder (2)\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj": {
+    "F:\\web developer\\Heart_Foundation\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\New folder (2)\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
+        "projectUniqueName": "F:\\web developer\\Heart_Foundation\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
         "projectName": "lamst-ma7ba Api",
-        "projectPath": "F:\\New folder (2)\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
-        "packagesPath": "C:\\Users\\rt\\.nuget\\packages\\",
-        "outputPath": "F:\\New folder (2)\\lamst_ma7ba_api\\obj\\",
+        "projectPath": "F:\\web developer\\Heart_Foundation\\lamst_ma7ba\\lamst_ma7ba_api\\lamst-ma7ba Api.csproj",
+        "packagesPath": "C:\\Users\\nourmaher\\.nuget\\packages\\",
+        "outputPath": "F:\\web developer\\Heart_Foundation\\lamst_ma7ba\\lamst_ma7ba_api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\rt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nourmaher\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -143,7 +145,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.113\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

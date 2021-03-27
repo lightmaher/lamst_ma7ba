@@ -39,7 +39,6 @@ import {MatCardModule} from '@angular/material/card';
 import { ImagesComponent } from './images/images.component';
 import { AddImageComponent } from './images/add-image/add-image.component';
 import { DonateComponent } from './donate/donate.component';
-import { UploadPlaceComponent } from './places/place-add/upload-place/upload-place.component';
 
 
 
@@ -73,8 +72,7 @@ export function tokenGetter() {
     SidebarComponent,
     ImagesComponent,
     AddImageComponent,
-    DonateComponent,
-    UploadPlaceComponent
+    DonateComponent
    ],
   imports: [
     IvyCarouselModule,
@@ -102,7 +100,6 @@ export function tokenGetter() {
     ReactiveFormsModule
   ],
   providers: [
-  
   ],
   bootstrap: [AppComponent]
 })
