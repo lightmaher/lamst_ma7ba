@@ -19,30 +19,31 @@ import { PlacesComponent } from './places/places.component';
 import { UserAddComponent } from './user/user-add/user-add.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserComponent } from './user/user.component';
+import { AuthGuardService } from './Guard/auth-guard.service';
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent , pathMatch: 'full'},
   { path: 'events', component: EventsComponent},
-  {path: 'addevent', component: AddEventComponent },
+  {path: 'addevent', component: AddEventComponent , canActivate: [AuthGuardService]},
   {path: 'places' , component: PlacesComponent},
-  {path: 'add-place' , component: PlaceAddComponent},
-  {path: 'edit-place/:id' , component: PlaceAddComponent},
+  {path: 'add-place' , component: PlaceAddComponent , canActivate: [AuthGuardService]},
+  {path: 'edit-place/:id' , component: PlaceAddComponent , canActivate: [AuthGuardService]},
   {path: 'place-detail/:id' , component: PlaceDetailComponent},
   {path: 'login' , component: AccountComponent},
   {path: 'event-detail/:id' , component: EventDetailsComponent},
   {path: 'contactus' , component: ContactUsComponent},
-  {path: 'messages' , component: MessagesComponent},
+  {path: 'messages' , component: MessagesComponent , canActivate: [AuthGuardService]},
   {path: 'about' , component: AboutUsComponent},
   {path: 'users' , component: UserComponent },
-  {path: 'add-user' , component: UserAddComponent},
+  {path: 'add-user' , component: UserAddComponent , canActivate: [AuthGuardService]},
   {path: 'needs' , component: NeedsComponent},
-  {path: 'add-need' , component: AddNeedComponent},
-  {path: 'user-detail/:id' , component: UserDetailsComponent},
+  {path: 'add-need' , component: AddNeedComponent , canActivate: [AuthGuardService]},
+  {path: 'user-detail/:id' , component: UserDetailsComponent, canActivate: [AuthGuardService]},
   {path: 'aboutus' , component: AboutUsComponent},
   {path: 'home' , component: HomeComponent},
   {path: 'images', component: ImagesComponent},
-  {path: 'add-image' , component: AddImageComponent},
+  {path: 'add-image' , component: AddImageComponent , canActivate: [AuthGuardService]},
   {path: 'donate' , component: DonateComponent}
 ];
 

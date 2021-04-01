@@ -39,7 +39,9 @@ import {MatCardModule} from '@angular/material/card';
 import { ImagesComponent } from './images/images.component';
 import { AddImageComponent } from './images/add-image/add-image.component';
 import { DonateComponent } from './donate/donate.component';
-
+import { UploadPlaceComponent } from './places/place-add/upload-place/upload-place.component';
+import {NeedsComponent} from './needs/needs.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 export function tokenGetter() {
@@ -72,7 +74,9 @@ export function tokenGetter() {
     SidebarComponent,
     ImagesComponent,
     AddImageComponent,
-    DonateComponent
+    DonateComponent,
+    UploadPlaceComponent,
+    NeedsComponent
    ],
   imports: [
     IvyCarouselModule,
@@ -97,7 +101,8 @@ export function tokenGetter() {
     MatFormFieldModule,
     MatNativeDateModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatProgressSpinnerModule
   ],
   providers: [
   ],

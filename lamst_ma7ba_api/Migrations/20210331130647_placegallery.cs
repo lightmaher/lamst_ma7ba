@@ -2,12 +2,12 @@
 
 namespace lamst_ma7ba_Api.Migrations
 {
-    public partial class addplaceGallery : Migration
+    public partial class placegallery : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "placeGalleries",
+                name: "PlaceGallery",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -18,9 +18,9 @@ namespace lamst_ma7ba_Api.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_placeGalleries", x => x.Id);
+                    table.PrimaryKey("PK_PlaceGallery", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_placeGalleries_places_PlaceId",
+                        name: "FK_PlaceGallery_places_PlaceId",
                         column: x => x.PlaceId,
                         principalTable: "places",
                         principalColumn: "PlaceId",
@@ -28,15 +28,15 @@ namespace lamst_ma7ba_Api.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_placeGalleries_PlaceId",
-                table: "placeGalleries",
+                name: "IX_PlaceGallery_PlaceId",
+                table: "PlaceGallery",
                 column: "PlaceId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "placeGalleries");
+                name: "PlaceGallery");
         }
     }
 }

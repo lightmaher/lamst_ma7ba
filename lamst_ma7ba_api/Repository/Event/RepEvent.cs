@@ -29,6 +29,7 @@ namespace lamst_ma7ba_Api.Models
         public async Task AddEvent(Event Event)
         {
             var place = _context.places.FirstOrDefault(x => x.PlaceId == Event.PlaceId);
+         var time = Convert.ToDateTime(Event.Date);
             Event event1 = new Event()
             {
                 Title = Event.Title,
@@ -38,7 +39,8 @@ namespace lamst_ma7ba_Api.Models
                 Needs = Event.Needs,
                url=Event.url,
                PlaceId=Event.PlaceId,
-               Location=place
+               Location=place,
+               AddetTime = time
             };
             await _context.Events.AddAsync(event1);
             await _context.SaveChangesAsync();
@@ -53,7 +55,7 @@ namespace lamst_ma7ba_Api.Models
 
         public async Task<IList<Event>> GetAllEvents()
         {
-            var eves = await _context.Events.Include(c => c.Location).Include(x => x.Joins).ToListAsync();
+            var eves = await _context.Events.Include(c => c.Location).Include(x => x.Joins).OrderByDescending(x => x.AddetTime).ToListAsync();
             return eves;
         }
 

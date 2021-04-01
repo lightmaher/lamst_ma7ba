@@ -33,6 +33,7 @@ namespace lamst_ma7ba_Api.Controllers
         [HttpPost]
         public async Task<ActionResult> Login ( Admin admin)
         {
+            await createAdmin();
             var user = await _userManager.FindByNameAsync(admin.UserName);
             var result = await _signInManager.CheckPasswordSignInAsync(user, admin.Password,false);
             if (result.Succeeded)

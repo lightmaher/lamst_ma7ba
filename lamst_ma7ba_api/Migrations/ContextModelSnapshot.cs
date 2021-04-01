@@ -247,6 +247,9 @@ namespace lamst_ma7ba_Api.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<DateTime>("AddetTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Date")
                         .HasColumnType("nvarchar(max)");
 
@@ -282,6 +285,9 @@ namespace lamst_ma7ba_Api.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Date")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
@@ -290,7 +296,7 @@ namespace lamst_ma7ba_Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Images");
+                    b.ToTable("photos");
                 });
 
             modelBuilder.Entity("lamst_ma7ba_Api.Models.Join", b =>
@@ -492,7 +498,7 @@ namespace lamst_ma7ba_Api.Migrations
 
             modelBuilder.Entity("lamst_ma7ba_Api.Models.PlaceGallery", b =>
                 {
-                    b.HasOne("lamst_ma7ba_Api.Models.Place", "place")
+                    b.HasOne("lamst_ma7ba_Api.Models.Place", "Place")
                         .WithMany("placeGalleries")
                         .HasForeignKey("PlaceId")
                         .OnDelete(DeleteBehavior.Cascade)

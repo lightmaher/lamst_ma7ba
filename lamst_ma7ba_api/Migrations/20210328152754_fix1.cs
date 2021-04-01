@@ -3,11 +3,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace lamst_ma7ba_Api.Migrations
 {
-    public partial class nour : Migration
+    public partial class fix1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-           /* migrationBuilder.CreateTable(
+            migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
                 {
@@ -20,7 +20,7 @@ namespace lamst_ma7ba_Api.Migrations
                 {
                     table.PrimaryKey("PK_AspNetRoles", x => x.Id);
                 });
-                
+
             migrationBuilder.CreateTable(
                 name: "AspNetUsers",
                 columns: table => new
@@ -74,6 +74,20 @@ namespace lamst_ma7ba_Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Needs", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "photos",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(nullable: true),
+                    Url = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_photos", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -229,7 +243,7 @@ namespace lamst_ma7ba_Api.Migrations
                     Needs = table.Column<string>(nullable: true),
                     Number = table.Column<int>(nullable: false),
                     url = table.Column<string>(nullable: true),
-                    Date = table.Column<DateTime>(nullable: false),
+                    Date = table.Column<string>(nullable: true),
                     PlaceId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -311,7 +325,7 @@ namespace lamst_ma7ba_Api.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Joins_EventId",
                 table: "Joins",
-                column: "EventId");*/
+                column: "EventId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -339,6 +353,9 @@ namespace lamst_ma7ba_Api.Migrations
 
             migrationBuilder.DropTable(
                 name: "Needs");
+
+            migrationBuilder.DropTable(
+                name: "photos");
 
             migrationBuilder.DropTable(
                 name: "Users");

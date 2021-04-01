@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Image } from 'src/app/_Models/image';
 import { ImageService } from 'src/app/_Services/image.service';
 
@@ -13,7 +14,7 @@ export class AddImageComponent implements OnInit {
  image: Image;
  public response: {url: ''};
 
-  constructor( private fb: FormBuilder, private  imageservices: ImageService) { }
+  constructor( private fb: FormBuilder, private  imageservices: ImageService , private roter: Router) { }
 
   ngOnInit(): void {
     this.createForm();
@@ -22,6 +23,8 @@ createForm(){
   this.form = this.fb.group(
     {
       title: ['', Validators.required],
+      date: ['', ],
+
     }
   );
 }
@@ -31,7 +34,9 @@ uploadFinished = (event) => {
 addimage(){
   this.image = Object.assign({}, this.form.value);
   this.image.url = this.response.url;
-  this.imageservices.addImage(this.image).subscribe(res => {console.log(this.image); }, err => {
+  this.imageservices.addImage(this.image).subscribe(res => {
+    this.roter.navigate(['/images']);
+  }, err => {
     console.log(err);
   } );
 }

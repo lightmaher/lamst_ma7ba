@@ -75,7 +75,7 @@ namespace lamst_ma7ba_Api.Repository.PlaceRepository
         {
             if (id !=0)
             {
-                var place = await _context.places.Include(p => p.placeGalleries).FirstOrDefaultAsync(p => p.PlaceId == id);
+                var place = await _context.places.Include(x => x.Events).Include(p => p.placeGalleries).FirstOrDefaultAsync(x => x.PlaceId == id);
                 if (place == null)
                     return null;
                 return place;

@@ -12,19 +12,20 @@ import { HomeService } from '../_Services/home.service';
 export class HomeComponent implements OnInit {
 
   constructor(private http: HttpClient, private homeservice: HomeService) { }
-  events: Evt [];
-  places: Place [];
+  events = [];
+  places = [];
   ngOnInit(): void {
+    console.log(this.events);
     this.getPlaces();
     this.getEvenst();
   }
   getPlaces(){
-    this.homeservice.getPlaces().subscribe((res: Place[]) => this.places = res);
+    this.homeservice.getPlaces().subscribe((res: []) => this.places = res);
   }
   public createImgPath = (server: string) => {
     return `https://localhost:44367/${server}`;
   }
 getEvenst(){
-  this.homeservice.getEvents().subscribe((res: Evt[]) => this.events  = res );
+  this.homeservice.getEvents().subscribe((res: []) => this.events  = res );
 }
 }

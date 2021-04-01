@@ -10,8 +10,8 @@ using lamst_ma7ba_Api.Models;
 namespace lamst_ma7ba_Api.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20210322153307_fosa")]
-    partial class fosa
+    [Migration("20210329132743_addet-time")]
+    partial class addettime
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -249,8 +249,11 @@ namespace lamst_ma7ba_Api.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("Date")
+                    b.Property<DateTime>("AddetTime")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Date")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -275,6 +278,24 @@ namespace lamst_ma7ba_Api.Migrations
                     b.HasIndex("PlaceId");
 
                     b.ToTable("Events");
+                });
+
+            modelBuilder.Entity("lamst_ma7ba_Api.Models.Image", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("photos");
                 });
 
             modelBuilder.Entity("lamst_ma7ba_Api.Models.Join", b =>
@@ -341,29 +362,6 @@ namespace lamst_ma7ba_Api.Migrations
                     b.HasKey("PlaceId");
 
                     b.ToTable("places");
-                });
-
-            modelBuilder.Entity("lamst_ma7ba_Api.Models.PlaceGallery", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PlaceId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Url")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PlaceId");
-
-                    b.ToTable("placeGalleries");
                 });
 
             modelBuilder.Entity("lamst_ma7ba_Api.Models.User", b =>
@@ -470,15 +468,6 @@ namespace lamst_ma7ba_Api.Migrations
                     b.HasOne("lamst_ma7ba_Api.Models.Event", "Event")
                         .WithMany("Joins")
                         .HasForeignKey("EventId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("lamst_ma7ba_Api.Models.PlaceGallery", b =>
-                {
-                    b.HasOne("lamst_ma7ba_Api.Models.Place", "place")
-                        .WithMany("placeGalleries")
-                        .HasForeignKey("PlaceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

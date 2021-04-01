@@ -1,10 +1,19 @@
+
 <div class="container">
+
         <div>
-            <button class="btn btn-info mt-3 btn-lg" routerLink="/addevent" *ngIf="loggedin()"> اضافة حدث </button>
-            <div class="row" style="direction: rtl;">
-              
+            <button class="btn btn-primary mt-3" routerLink="/addevent" *ngIf="loggedin()"> اضافة حدث </button>  
+            
+           <mat-progress-spinner class="mt-3" *ngIf="events.length ===0 " mode="indeterminate" color='warn' aria-setsize="200px"></mat-progress-spinner>
+          
+       
+            <div class="container" style="direction: rtl;">
+
+              <div class="row mr-4">
                 <app-event *ngFor="let item of events | paginate: {  itemsPerPage: 9,
                     currentPage: p}" [evt]="item"></app-event>
+              </div>
+               
             </div>
             <hr>
             <pagination-controls (pageChange)="p = $event" ></pagination-controls>

@@ -10,8 +10,8 @@ using lamst_ma7ba_Api.Models;
 namespace lamst_ma7ba_Api.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20210325140442_update")]
-    partial class update
+    [Migration("20210328152754_fix1")]
+    partial class fix1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -292,7 +292,7 @@ namespace lamst_ma7ba_Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Images");
+                    b.ToTable("photos");
                 });
 
             modelBuilder.Entity("lamst_ma7ba_Api.Models.Join", b =>
@@ -359,29 +359,6 @@ namespace lamst_ma7ba_Api.Migrations
                     b.HasKey("PlaceId");
 
                     b.ToTable("places");
-                });
-
-            modelBuilder.Entity("lamst_ma7ba_Api.Models.PlaceGallery", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("PlaceId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Url")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PlaceId");
-
-                    b.ToTable("PlaceGallery");
                 });
 
             modelBuilder.Entity("lamst_ma7ba_Api.Models.User", b =>
@@ -488,15 +465,6 @@ namespace lamst_ma7ba_Api.Migrations
                     b.HasOne("lamst_ma7ba_Api.Models.Event", "Event")
                         .WithMany("Joins")
                         .HasForeignKey("EventId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("lamst_ma7ba_Api.Models.PlaceGallery", b =>
-                {
-                    b.HasOne("lamst_ma7ba_Api.Models.Place", "place")
-                        .WithMany("placeGalleries")
-                        .HasForeignKey("PlaceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

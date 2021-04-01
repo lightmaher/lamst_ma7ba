@@ -18,6 +18,7 @@ export class AddNeedComponent implements OnInit {
   btnTitle: string;
   isEditMode: boolean;
   message: string;
+  months = [   'january' , 'febrarusry', 'march', 'april' , 'may', 'june' , 'july' , 'augest', 'september' , 'november' , 'decemper'];
   messageValidate =  {
     month: {
       required: 'الشهر مطلوب'

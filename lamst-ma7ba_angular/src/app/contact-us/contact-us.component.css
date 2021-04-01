@@ -1,9 +1,8 @@
-.placeForm{
+.placeFormx{
     margin-top: 20px;
-    border: 1px solid #ced4da;
+    border: 1px double black;
     padding: 20px;
-    border-top-right-radius: 5%;
-    border-bottom-left-radius: 5%;
+   
     margin-bottom: 30px;
 }
 h1,h2{

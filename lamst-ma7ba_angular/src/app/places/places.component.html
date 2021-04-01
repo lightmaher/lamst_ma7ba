@@ -2,7 +2,7 @@
     <div>
         <button *ngIf="loggedin()" type="button" routerLink="/add-place" class="btn btn-primary mt-3">اضافة مكان</button>
 
-        <div class="row mb-5" style="direction: rtl;">
+        <div class="row mr-5 mb-5" style="direction: rtl;">
                 <app-place *ngFor="let plc of places" [place]="plc"></app-place>
         </div>
     </div>

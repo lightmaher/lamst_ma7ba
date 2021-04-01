@@ -5,7 +5,7 @@ import { Place } from '../../_Models/place';
 import { EventService } from 'src/app/_Services/event.service';
 import { Evt } from 'src/app/_Models/Evt';
 import { AccountService } from 'src/app/_Services/Account.service';
-
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-place-detail',
@@ -13,7 +13,7 @@ import { AccountService } from 'src/app/_Services/Account.service';
   styleUrls: ['./place-detail.component.css']
 })
 export class PlaceDetailComponent implements OnInit {
-
+  p = 1;
   place: Place;
   evet: Evt[];
   evt: Evt;
@@ -64,6 +64,14 @@ export class PlaceDetailComponent implements OnInit {
         this.route.navigate(['/places']);
       } , err => console.log(err));
     }
+  }
+  onclick(){
+    $(document).ready(function() {
+      $('.thumbnail img').on('click' , function(){
+        $('.master-img img').attr('src' , $(this).attr('src'));
+
+      });
+    });
   }
   showevents(){
     this.eventsservice.getAllEvents().subscribe(

@@ -1,3 +1,5 @@
+      <h1 style="text-align: center; font-weight: bold;font-family: cairo;" class="mt-2"> طلب تطوع</h1>
+      <hr style="border: 1px solid #d8d8d8; margin-top: -5px;" width="10%">
 <div class="container mt-2 border border-secondary rounded" >
  <form class="mt-2" [formGroup]="userForm" (ngSubmit)="adduser()">
 <div class="mb-3">
@@ -25,5 +27,4 @@
 </div>
 <button type="submit" class="btn btn-danger btn-lg mb-2" [disabled]="!userForm.valid" > ارسال </button>
 </form>
-
 </div>

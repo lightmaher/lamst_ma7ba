@@ -13,6 +13,7 @@ namespace lamst_ma7ba_Api.Models
         public string Url { get; set; }
         [ForeignKey("place")]
         public int PlaceId { get; set; }
-        public virtual Place place { get; set; }
+        public virtual Place Place { get; set; }
+
     }
 }

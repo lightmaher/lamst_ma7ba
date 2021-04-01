@@ -1,36 +1,44 @@
-<div class="container col-md-5 mt-4 placeForm">
-    <form [formGroup]="addForm" (ngSubmit)="add()">
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="عنوان الفاعلية" formControlName="title">
-        </div>
-        <div class="form-group">
-            <textarea class="form-control" rows="3" placeholder="التفاصيل" formControlName="description"></textarea>
-        </div>
-        <div class="row form-group">
-            <div class="col-6">
-                <select class="form-control" formControlName="placeId" aria-placeholder="مكان الزيارة">
-                    <option *ngFor="let place of places" [value]="place.placeId">{{place.title}}</option>
-                </select>        
-            </div>      
-            <div class="col-6">
-                <input class="form-control" type="date" formControlName="date">
-            </div>
+<div class="container ">
+    
+    <div class="col-md-5  mt-4 placeForm mx-auto">
+        
+        <form [formGroup]="addForm" (ngSubmit)="add()">
+            <h2 style="text-align: center;">اضافة حدث جديد</h2>
+        <hr style="border: 1px solid #d8d8d8; margin-top: -5px;" width="20%">
 
-        </div>
-        <div class="row">
-            <div class="col">
-                <input class="form-control" type="number" formControlName="number" placeholder="عدد المتطوعين المطلوب ">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="عنوان الفاعلية" formControlName="title">
             </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="الاحتياجات" formControlName="needs">
+            <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="التفاصيل" formControlName="description"></textarea>
             </div>
-        </div>
-        <div class="mt-3">
-        <app-upload (onUploadFinished)="uploadFinished($event)"></app-upload>
-        </div>
-        <div>
-            <button class="btn btn-primary mt-2 float-right btn-lg text-xl-center" [disabled]="addForm.invalid" type="submit"> اضافة </button>
-        </div>
-
-    </form>
+            <div class="row form-group">
+                <div class="col-6">
+                    <select class="form-control" formControlName="placeId" aria-placeholder="مكان الزيارة">
+                        <option *ngFor="let place of places" [value]="place.placeId">{{place.title}}</option>
+                    </select>        
+                </div>      
+                <div class="col-6">
+                    <input class="form-control" type="date" formControlName="date">
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input class="form-control" type="number" formControlName="number" placeholder="عدد المتطوعين المطلوب ">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="الاحتياجات" formControlName="needs">
+                </div>
+            </div>
+            <div class="mt-3">
+            <app-upload (onUploadFinished)="uploadFinished($event)"></app-upload>
+            </div>
+            <div>
+                <button class="btn btn-primary mt-2 float-right btn-lg text-xl-center" [disabled]="addForm.invalid" type="submit"> اضافة </button>
+            </div>
+    
+        </form>
+    </div>
+   
 </div>

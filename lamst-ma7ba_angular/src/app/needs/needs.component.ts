@@ -10,8 +10,9 @@ import { Need } from '../_Models/need';
 })
 export class NeedsComponent implements OnInit {
 
-  needs: Need[];
+  needs: any[];
   constructor(private http: HttpClient,
+    // tslint:disable-next-line:align
     private neddService: NeedService) { }
 
   ngOnInit(): void {
@@ -21,6 +22,7 @@ export class NeedsComponent implements OnInit {
   getNeeds(){
     this.neddService.GetAllNeeds().subscribe(list => {
       this.needs = list;
+      console.log(this.needs);
     } , err => console.log(err));
   }
 }

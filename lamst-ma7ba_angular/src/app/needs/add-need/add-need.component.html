@@ -13,7 +13,10 @@
     <form [formGroup]="needForm" (ngSubmit)="Add()">
         <div class="form-froup">
             <label for="month" style="font-weight: 520;font-size: 15px;">الشهر</label>
-            <input type="text" 
+            <select formControlName="month" class="form-control" >
+                <option *ngFor="let month of months" [value]='month'> {{month}} </option>
+            </select>
+           <!--<input type="text" 
             formControlName="month" 
             class="form-control" [ngClass]="{'is-invalid':
             needForm.get('month').invalid && needForm.get('month').touched}">
@@ -21,6 +24,7 @@
              needForm.get('month').touched">
                 {{messageValidate.month.required}}
             </div>
+        </div>--> 
         </div>
         <div class="form-group mt-3">
             <label for="description" style="font-weight: 520;font-size: 15px;">الاحتياجات</label>

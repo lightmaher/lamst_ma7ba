@@ -10,8 +10,8 @@ using lamst_ma7ba_Api.Models;
 namespace lamst_ma7ba_Api.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20210118182126_nour")]
-    partial class nour
+    [Migration("20210329134800_image-date")]
+    partial class imagedate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -249,8 +249,11 @@ namespace lamst_ma7ba_Api.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<DateTime>("Date")
+                    b.Property<DateTime>("AddetTime")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Date")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
@@ -275,6 +278,27 @@ namespace lamst_ma7ba_Api.Migrations
                     b.HasIndex("PlaceId");
 
                     b.ToTable("Events");
+                });
+
+            modelBuilder.Entity("lamst_ma7ba_Api.Models.Image", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Date")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("photos");
                 });
 
             modelBuilder.Entity("lamst_ma7ba_Api.Models.Join", b =>

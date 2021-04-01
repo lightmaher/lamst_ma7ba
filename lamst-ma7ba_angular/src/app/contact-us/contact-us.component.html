@@ -1,31 +1,30 @@
 <div class="container">
   <div class="mt-2">
-    <h1 style="font-family: cairo; font-size: xx-large;"> للتواصل معنا
+    <h1  class="text-center mt-1 font-weight-bold"> للتواصل معنا    <hr style="width: 15%; border: 1px solid #d8d8d8; border-radius: 10px;">
+
     </h1>
-    <hr style="width: 15%; border: 1px solid #d8d8d8; border-radius: 10px; float: right;">
     <br>
-    <h2 class="text-center mt-2 bg-light border border-dark rounded" style="font-size: x-large; margin-right: 150px; width: 800px; height: 70px;">يمكنكم التواصل معنا من خلال رقم الهاتف 
+    <h2 class="text-center  bg-light border border-dark rounded"> يمكنكم التواصل معنا من خلال رقم الهاتف 
       01091046000 
       <br>
       او من خلال صفحتنا على الفيس بوك 
       <a href="https://www.facebook.com/Lamsetma7abawra7ma/" target="_blank"><i class="fab fa-facebook  text-primary"></i></a>
+      <br>     
 
     </h2>
   </div>
   <div class="text-center">
-    <form [formGroup]="contactusForm" (ngSubmit)="addMessage()"  class="placeForm">
+    <form [formGroup]="contactusForm" (ngSubmit)="addMessage()"  class="placeFormx">
       <div class="mb-3">
-          <h2  class="form-label">الاسم </h2>
-          <input type="text" class="form-control"  formControlName="name" placeholder="">
+          <input type="text" class="form-control"  formControlName="name" placeholder="الاسم">
         </div>
       <div class="mb-3">
-          <h2  class="form-label"> رقم الهاتف</h2>
-          <input type="number" class="form-control" formControlName="phoneNumber" placeholder="">
+          
+          <input type="number" class="form-control" formControlName="phoneNumber" placeholder="رقم الهاتف">
         </div>
 
         <div class="mb-3">
-          <h2  class="form-label">الرسالة</h2>
-          <textarea class="form-control" formControlName="message"  rows="5"></textarea>
+          <textarea class="form-control" formControlName="message" placeholder="الرسالة ..." rows="5"></textarea>
         </div>
         <button type="submit" class="btn btn-danger btn-lg">ارسال </button>
       </form>
