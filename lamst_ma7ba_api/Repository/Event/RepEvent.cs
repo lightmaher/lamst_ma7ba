@@ -22,7 +22,7 @@ namespace lamst_ma7ba_Api.Models
         public async Task<IList<Event>> getHomeEvents()
         {
 
-            var resualt = await _context.Events.Include(c => c.Location).Take(3).OrderBy(x => x.Date).ToListAsync();
+            var resualt = await _context.Events.Include(c => c.Location).Take(3).OrderByDescending(x => x.AddetTime).ToListAsync();
             return resualt;
         }
 
@@ -62,7 +62,7 @@ namespace lamst_ma7ba_Api.Models
         public async Task<Event> GetEvent(int id)
         {
             Event evt = await _context.Events.Include(x => x.Joins).FirstOrDefaultAsync(c => c.Id == id);
-            
+ 
             return evt;
         }
 

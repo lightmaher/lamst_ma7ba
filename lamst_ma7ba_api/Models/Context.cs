@@ -21,6 +21,9 @@ namespace lamst_ma7ba_Api.Models
         public DbSet<Need> Needs { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Join> Joins { get; set; }
+        public DbSet<ImageCat> imageCats { get; set; }
+
+
 
     }
 }

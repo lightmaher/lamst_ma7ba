@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Image } from '../_Models/image';
+import { Imagecat } from '../_Models/imagecat';
 import { AccountService } from '../_Services/Account.service';
 import { ImageService } from '../_Services/image.service';
+import { ImagecatService } from '../_Services/imagecat.service';
 
 @Component({
   selector: 'app-images',
@@ -11,22 +13,26 @@ import { ImageService } from '../_Services/image.service';
 export class ImagesComponent implements OnInit {
    p = 1;
   images: Image[];
-  constructor(private imageservice: ImageService, private accountservice: AccountService) { }
+  imagescat: Imagecat[];
+  constructor(private imageservice: ImageService, private accountservice: AccountService , private imagecatservice: ImagecatService) { }
 
   ngOnInit(): void {
-    this.getImages();
+    this.getImagescat();
   }
-getImages(){
-  this.imageservice.showimages().subscribe((imgs: Image[]) => {this.images = imgs; } );
+getImagescat(){
+  this.imagecatservice.getimagescat().subscribe((imgcats: Imagecat[]) => {this.imagescat = imgcats; } );
 }
+
 public createImgPath = (serverPath: string) => {
   return `https://localhost:44367/${serverPath}`;
 }
-delete_image(id){
-this.imageservice.deleteImage(id).subscribe(res => { this.getImages(); } , err => { console.log('err'); } );
-}
 login(){
   return this.accountservice.loggedin();
+}
+delete(id){
+  return this.imagecatservice.deleteimagecat(id).subscribe( res => {
+    this.getImagescat();
+  });
 }
 
 }

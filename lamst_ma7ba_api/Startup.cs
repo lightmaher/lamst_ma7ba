@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using lamst_ma7ba_Api.Models;
 using lamst_ma7ba_Api.Repository.ContactUsRepository;
+using lamst_ma7ba_Api.Repository.ImageCatRepository;
 using lamst_ma7ba_Api.Repository.ImageRepository;
 using lamst_ma7ba_Api.Repository.NeedRepository;
 using lamst_ma7ba_Api.Repository.PlaceRepository;
@@ -52,6 +53,7 @@ namespace lamst_ma7ba_Api
             services.AddScoped<IRepEvent, RepEvent>();
             services.AddScoped<IPlaceRepo , PlaceRepo>();
             services.AddScoped<IImageRepo, ImageRepo>();
+            services.AddScoped<IImageCatRepo, ImageCatRepo>();
             services.AddScoped<IContectUsRepoistory, ContactUsRepoistory>();
             services.AddScoped<INeedRepo,NeedRepo>();
             services.AddScoped<IUserRep, UserRep>();

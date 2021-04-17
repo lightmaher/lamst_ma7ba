@@ -3,4 +3,7 @@
         <h1 class="month-class" style="margin-top: 50px;" >{{need.month}}</h1>
         <p>{{need.description}}</p>
     </div>
+    <div *ngIf="islogin()">
+        <button class="btn btn-primary mt-2" routerLink='/add-need  '> اضافة احتياج</button>
+    </div>
 </div>

@@ -2,19 +2,37 @@
 
     <div class="d-flex justify-content-center">
         <h1 class="mt-2 font-weight-bold" style="font-family: cairo;"> صور فاعليتنا <hr style="height: 10px;"></h1>
-    </div>    
-            <div class="gallery" >
+    </div> 
+    <button class="btn btn-primary" [routerLink]="['/add-imagecat']" routerLinkActive="router-link-active" > اضافة البوم جديد</button>
+    <div class="row justify-content-center" >
+      <div *ngFor="let imagecat of imagescat" class="mr-2 mt-2">
+        <div class="card " style="width: 28rem;">
+            <!--<img [src]='createImgPath(imagecat.url)' class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h1 style="font-family: cairo;font-weight: bold;" class="card-title text-center">{{imagecat.title}}</h1>
+            <div class="text-center">
+                <button class="btn btn-primary ml-2" [routerLink]="['/images/imagescategorey/' , imagecat.id]" > مشاهدة الصور </button>
+                <button class="btn btn-danger" *ngIf="login()" (click)='delete(imagecat.id)'> حذف </button>
+            </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      
+         <!--
+                <div class="gallery" >
                 <div *ngFor="let image of images |  paginate: {  itemsPerPage: 9,
                     currentPage: p}" >
                 <div class="gallery-item border border-black col" style="width: 500px; height: 400px; ;">
                     <img class="gallery-image" [src]='createImgPath(image.url)'>
                 </div>
                 <h2 class="text-center bg-light mt-2" style="font-family: cairo; font-weight: bold;"> {{image.title}}</h2>
-                <h3 class="text-center bg-light mt-2" style="font-family: cairo; font-weight: bold;"> {{image.date}}</h3>
+                <h3 class="text-center bg-light mt-2" style="font-family: cairo; font-weight: bold;"> {{image.dateString}}</h3>
                 <button class="btn btn-danger" (click)='delete_image(image.id)'  [hidden]="!login()"> Delete </button>
             </div>
         <button class="btn btn-primary mt-2 mb-2" routerLink="/add-image" [hidden]="!login()"> اضافة صورة </button>
          </div>
          <pagination-controls (pageChange)="p = $event" ></pagination-controls>
     </div>
+         -->
  

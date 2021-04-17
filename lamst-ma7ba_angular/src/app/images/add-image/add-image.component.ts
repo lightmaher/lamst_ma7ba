@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Image } from 'src/app/_Models/image';
+import { Imagecat } from 'src/app/_Models/imagecat';
 import { ImageService } from 'src/app/_Services/image.service';
+import { ImagecatService } from 'src/app/_Services/imagecat.service';
 
 @Component({
   selector: 'app-add-image',
@@ -14,16 +16,19 @@ export class AddImageComponent implements OnInit {
  image: Image;
  public response: {url: ''};
 
-  constructor( private fb: FormBuilder, private  imageservices: ImageService , private roter: Router) { }
-
+  // tslint:disable-next-line:max-line-length
+  constructor( private fb: FormBuilder, private  imageservices: ImageService , private roter: Router , private imagecatservice: ImagecatService) { }
+  imagescat: Imagecat[];
   ngOnInit(): void {
     this.createForm();
+    this.imagecatservice.getimagescat().subscribe((imagescats: Imagecat[]) => this.imagescat = imagescats);
   }
 createForm(){
   this.form = this.fb.group(
     {
       title: ['', Validators.required],
-      date: ['', ],
+      dateString: ['', ],
+      imagecatId: ['', ]
 
     }
   );

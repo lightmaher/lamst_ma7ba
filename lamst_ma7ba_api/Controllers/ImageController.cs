@@ -22,9 +22,9 @@ namespace lamst_ma7ba_Api.Controllers
         }
         // GET: api/<ImageController>
         [HttpGet]
-        public async Task<ActionResult<IList<Image>>> GetImages()
+        public async Task<ActionResult<IList<Image>>> GetImages( int catid)
         {
-            var images = await iimagerepo.GetImages();
+            var images = await iimagerepo.GetImages(catid);
             return Ok(images);
         }
 

@@ -20,6 +20,8 @@ import { UserAddComponent } from './user/user-add/user-add.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserComponent } from './user/user.component';
 import { AuthGuardService } from './Guard/auth-guard.service';
+import { AddImagecatComponent } from './images/add-imagecat/add-imagecat.component';
+import { ShowImagesComponent } from './images/show-images/show-images.component';
 
 
 const routes: Routes = [
@@ -36,7 +38,7 @@ const routes: Routes = [
   {path: 'messages' , component: MessagesComponent , canActivate: [AuthGuardService]},
   {path: 'about' , component: AboutUsComponent},
   {path: 'users' , component: UserComponent },
-  {path: 'add-user' , component: UserAddComponent , canActivate: [AuthGuardService]},
+  {path: 'add-user' , component: UserAddComponent},
   {path: 'needs' , component: NeedsComponent},
   {path: 'add-need' , component: AddNeedComponent , canActivate: [AuthGuardService]},
   {path: 'user-detail/:id' , component: UserDetailsComponent, canActivate: [AuthGuardService]},
@@ -44,7 +46,10 @@ const routes: Routes = [
   {path: 'home' , component: HomeComponent},
   {path: 'images', component: ImagesComponent},
   {path: 'add-image' , component: AddImageComponent , canActivate: [AuthGuardService]},
-  {path: 'donate' , component: DonateComponent}
+  {path: 'donate' , component: DonateComponent},
+  {path: 'add-imagecat' , component: AddImagecatComponent, canActivate: [AuthGuardService]},
+  {path: 'images/imagescategorey/:id' , component: ShowImagesComponent}
+
 ];
 
 @NgModule({

@@ -7,8 +7,8 @@ import {Image} from '../_Models/image';
 export class ImageService {
 baseurl = 'https://localhost:44367/api/Image/';
   constructor(private http: HttpClient) { }
-  showimages(){
-    return this.http.get(this.baseurl);
+  showimages( catid: number){
+    return this.http.get(this.baseurl + '?catid=' + catid);
   }
   addImage( image: Image){
     return this.http.post(this.baseurl, image);

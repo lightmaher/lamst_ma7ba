@@ -1,0 +1,9 @@
+<div class="container mt-4">
+    <form  [formGroup]='form' (ngSubmit)='addimagecat()'>
+        <div class="form-group col-8">
+            <input class='form-control' type="text" class="form-control" formControlName='title' placeholder="اسم الالبوم">
+        </div>
+        <app-upload (onUploadFinished)="uploadFinished($event)"></app-upload>
+        <button class="btn btn-primary" type="submit"> اضافة </button>
+        </form>
+</div>

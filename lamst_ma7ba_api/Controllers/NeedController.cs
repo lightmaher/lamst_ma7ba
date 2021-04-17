@@ -49,7 +49,7 @@ namespace lamst_ma7ba_Api.Controllers
             if (ModelState.IsValid)
             {
                 var need = await _needRepo.EditNeedAsync(model);
-                if(need != null)
+                if (need != null)
                 {
                     return Ok(need);
                 }
@@ -65,6 +65,16 @@ namespace lamst_ma7ba_Api.Controllers
                 return need;
             return null;
         }
-        
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteNeed (int id) {
+            if (id != 0) {
+                await _needRepo.DeleteAsync(id);
+                return StatusCode(202);
+            }
+            else
+            {
+                return BadRequest();
+            }
+        } 
     }
 }

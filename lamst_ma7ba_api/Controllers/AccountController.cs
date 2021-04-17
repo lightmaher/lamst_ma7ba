@@ -19,7 +19,7 @@ namespace lamst_ma7ba_Api.Controllers
     public class AccountController : ControllerBase
     {
         private readonly Context _context;
-        private SignInManager<Admin> _signInManager;
+        private readonly SignInManager<Admin> _signInManager;
         private readonly UserManager<Admin> _userManager;
         private readonly IConfiguration _config;
 
@@ -50,26 +50,19 @@ namespace lamst_ma7ba_Api.Controllers
                 return BadRequest(result);
             }
         }
-        [HttpGet("createadmin")]
-        public async Task<ActionResult> createAdmin()
+       
+        public async Task createAdmin()
         {
-            Admin admin1 = new Admin
+            var admincheck = await _userManager.FindByNameAsync( "admin1");
+            if (admincheck == null)
             {
-                UserName = "admin1",
-                Password = "Admin@12"
-
-            };
-           var resuilt = await _userManager.CreateAsync(admin1, admin1.Password);
-            var admin = _userManager.FindByNameAsync("admin1");
-            if (resuilt.Succeeded)
-            {
-                return StatusCode(202);
+                Admin admin1 = new Admin
+                {
+                    UserName = "admin1",
+                };
+                var resuilt = await _userManager.CreateAsync(admin1, "Admin@12");
+                
             }
-            else
-            {
-                return BadRequest(resuilt);
-            }
-
         }
         private async Task<string> GenerateJwtToken(Admin admin)
         {

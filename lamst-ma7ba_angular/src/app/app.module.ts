@@ -42,6 +42,8 @@ import { DonateComponent } from './donate/donate.component';
 import { UploadPlaceComponent } from './places/place-add/upload-place/upload-place.component';
 import {NeedsComponent} from './needs/needs.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { AddImagecatComponent } from './images/add-imagecat/add-imagecat.component';
+import { ShowImagesComponent } from './images/show-images/show-images.component';
 
 
 export function tokenGetter() {
@@ -76,7 +78,9 @@ export function tokenGetter() {
     AddImageComponent,
     DonateComponent,
     UploadPlaceComponent,
-    NeedsComponent
+    NeedsComponent,
+    AddImagecatComponent,
+    ShowImagesComponent
    ],
   imports: [
     IvyCarouselModule,

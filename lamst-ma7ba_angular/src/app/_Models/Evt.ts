@@ -10,4 +10,5 @@ placeId: number;
 location: Place;
 number: number;
 needs: string;
+addetTime: Date;
 }

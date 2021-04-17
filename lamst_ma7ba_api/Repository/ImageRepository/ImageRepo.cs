@@ -18,7 +18,8 @@ namespace lamst_ma7ba_Api.Repository.ImageRepository
 
         public async Task addimage( Image image)
         {
-            var image1 = new Image() { Title = image.Title, Url = image.Url,Date=image.Date };
+            var time = Convert.ToDateTime(image.DateString);
+            var image1 = new Image() { Title = image.Title, Url = image.Url,Date= time,ImageCatId = image.ImageCatId ,ImageCat = context.imageCats.FirstOrDefault(x=> x.Id == image.ImageCatId) , DateString= image.DateString };
             await context.photos.AddAsync(image1);
             await context.SaveChangesAsync();
         }
@@ -30,9 +31,9 @@ namespace lamst_ma7ba_Api.Repository.ImageRepository
            await context.SaveChangesAsync();
         }
 
-        public async Task<IList<Image>> GetImages()
+        public async Task<IList<Image>> GetImages(int catid)
         {
-            var images = await context.photos.ToListAsync();
+            var images = await context.photos.OrderByDescending(x => x.Date).Where(x => x.ImageCatId == catid).ToListAsync();
             return images;
         }
 

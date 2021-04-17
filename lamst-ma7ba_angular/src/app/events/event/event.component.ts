@@ -56,4 +56,9 @@ joinform: FormGroup;
   loggedin(){
     return this.accountservice.loggedin();
   }
+  joinrule(){
+    if ( this.evt.addetTime.getTime() >= Date.now() ) {
+     }
+    return false;
+  }
 }
