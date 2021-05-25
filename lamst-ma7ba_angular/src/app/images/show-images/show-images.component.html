@@ -5,15 +5,20 @@
     </div> 
 
 <div class="gallery" >
-    <div *ngFor="let image of images |  paginate: {  itemsPerPage: 9,
-        currentPage: p}" >
+    <div *ngFor="let image of images |  paginate: {  itemsPerPage: 6,
+        currentPage: p , totalItems: count}" >
     <div class="gallery-item border border-black col" style="width: 500px; height: 400px; ;">
         <img class="gallery-image" [src]='createImgPath(image.url)'>
     </div>
-    <h2 class="text-center bg-danger rounded mt-2" style="font-family: cairo; font-weight: bold;"> {{image.title}}</h2>
+    <div style="width: 500px;" >
+        <h2 class="text-center bg-danger rounded mt-2" style="font-family: cairo; font-weight: bold;"> {{image.title}}</h2>
     <h3 class="text-center bg-light mt-2" style="font-family: cairo; font-weight: bold;"> {{image.dateString}}</h3>
     <button class="btn btn-danger" (click)='delete_image(image.id)'  [hidden]="!login()"> Delete </button>
+    </div>
+  
 </div>
-<button class="btn btn-primary mt-2 mb-2" routerLink="/add-image" [hidden]="!login()"> اضافة صورة </button>
 </div>
-<pagination-controls (pageChange)="p = $event" ></pagination-controls>
+<div class="d-flex align-content-center justify-content-center">
+<button class="btn btn-primary mt-2 mb-2 text-center w-50" routerLink="/add-image" [hidden]="!login()"> اضافة صورة </button>
+</div>
+<pagination-controls (pageChange)="updatepage($event)"  nextLabel="Next" ></pagination-controls>

@@ -10,10 +10,12 @@ namespace lamst_ma7ba_Api.Models
     {
         public Task<IList<Event>> getHomeEvents();
 
-        public Task< IList<Event>> GetAllEvents();
+        public Task< IList<Event>> GetAllEvents(int pn);
         public Task<Event> GetEvent(int id);
 
         public Task AddEvent(Event Event);
+        public Task<int> count_events();
+
 
         public Task DeleteEvent(int id);
         public Task UpdateEvent(int id ,Event evt1);

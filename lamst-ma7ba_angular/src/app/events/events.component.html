@@ -11,10 +11,10 @@
 
               <div class="row mr-4">
                 <app-event *ngFor="let item of events | paginate: {  itemsPerPage: 4,
-                    currentPage: p}" [evt]="item"></app-event>
+                    currentPage: p , totalItems: count}" [evt]="item"></app-event>
               </div>
                
             </div>
             <hr>
-            <pagination-controls (pageChange)="p = $event" ></pagination-controls>
+            <pagination-controls (pageChange)="update_page($event)" ></pagination-controls>
         </div>

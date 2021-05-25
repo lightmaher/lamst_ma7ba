@@ -10,8 +10,11 @@ import { Join } from '../_Models/join';
 export class EventService {
   baseurl = 'https://localhost:44367/api/Events/';
   constructor( private http: HttpClient) { }
-  getAllEvents(){
-   return this.http.get(this.baseurl);
+  getAllEvents(pn: number){
+   return this.http.get(this.baseurl + '?pn=' + pn);
+  }
+  countEvents(){
+    return this.http.get(this.baseurl + 'count');
   }
   getEvent(id: number){
     return this.http.get(this.baseurl + id);

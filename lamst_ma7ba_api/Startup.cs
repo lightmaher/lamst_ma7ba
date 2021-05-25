@@ -65,6 +65,7 @@ namespace lamst_ma7ba_Api
             builder.AddUserManager<UserManager<Admin>>();
             builder.AddSignInManager<SignInManager<Admin>>();
             builder.AddEntityFrameworkStores<Context>();
+            
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                .AddJwtBearer(options =>

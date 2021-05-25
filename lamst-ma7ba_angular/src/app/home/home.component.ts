@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
   events = [];
   places = [];
   ngOnInit(): void {
-    console.log(this.events);
     this.getPlaces();
     this.getEvenst();
   }

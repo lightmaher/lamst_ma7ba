@@ -22,17 +22,18 @@ namespace lamst_ma7ba_Api.Controllers
         }
         // GET: api/<ImageController>
         [HttpGet]
-        public async Task<ActionResult<IList<Image>>> GetImages( int catid)
+        public async Task<ActionResult<IList<Image>>> GetImages( int catid , int pn)
         {
-            var images = await iimagerepo.GetImages(catid);
+            var images = await iimagerepo.GetImages(catid , pn);
             return Ok(images);
         }
 
-        // GET api/<ImageController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        // GET api/<ImageController>/count
+        [HttpGet("count")]
+        public async Task<ActionResult<int>> count(int catid)
         {
-            return "value";
+            var count = await iimagerepo.count_images(catid);
+            return Ok(count);
         }
 
         // POST api/<ImageController>

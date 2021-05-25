@@ -22,10 +22,16 @@ namespace lamst_ma7ba_Api.Controllers
             _repEvent = repEvent;
         }
         [HttpGet]
-        public async Task<ActionResult<IList<Event>>> get()
+        public async Task<ActionResult<IList<Event>>> get(int pn)
         {
-            IList<Event> evts = await _repEvent.GetAllEvents();
+            IList<Event> evts = await _repEvent.GetAllEvents(pn);
             return Ok(evts);
+        }
+        [HttpGet("count")]
+        public async Task<ActionResult<int>> count()
+        {
+            var count = await _repEvent.count_events();
+            return Ok(count);
         }
         [HttpGet("{id}")]
         public async Task<ActionResult<Event>> getEvent(int id)

@@ -44,6 +44,7 @@ import {NeedsComponent} from './needs/needs.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { AddImagecatComponent } from './images/add-imagecat/add-imagecat.component';
 import { ShowImagesComponent } from './images/show-images/show-images.component';
+import { FacebookComponent } from './facebook/facebook.component';
 
 
 export function tokenGetter() {
@@ -80,7 +81,8 @@ export function tokenGetter() {
     UploadPlaceComponent,
     NeedsComponent,
     AddImagecatComponent,
-    ShowImagesComponent
+    ShowImagesComponent,
+    FacebookComponent
    ],
   imports: [
     IvyCarouselModule,

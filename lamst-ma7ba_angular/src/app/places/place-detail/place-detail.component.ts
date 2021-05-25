@@ -66,6 +66,7 @@ export class PlaceDetailComponent implements OnInit {
     }
   }
   onclick(){
+    // tslint:disable-next-line:only-arrow-functions
     $(document).ready(function() {
       $('.thumbnail img').on('click' , function(){
         $('.master-img img').attr('src' , $(this).attr('src'));
@@ -74,7 +75,7 @@ export class PlaceDetailComponent implements OnInit {
     });
   }
   showevents(){
-    this.eventsservice.getAllEvents().subscribe(
+    this.eventsservice.getAllEvents(this.p).subscribe(
       (events: Evt[]) => {this.evet = events;
                           this.nid = this.place.placeId;
                           this.fevet = (this.nid) ?
@@ -84,5 +85,9 @@ export class PlaceDetailComponent implements OnInit {
     }
     loggedin(){
       return this.accountservice.loggedin();
+    }
+    update_page( pn: number){
+this.p = pn;
+this.showevents();
     }
 }

@@ -24,6 +24,12 @@ namespace lamst_ma7ba_Api.Repository.ImageRepository
             await context.SaveChangesAsync();
         }
 
+        public async Task<int> count_images(int catid)
+        {
+            var count = await context.photos.Where(x => x.ImageCatId == catid).CountAsync();
+            return count;
+        }
+
         public async Task deleteimage(int id)
         {
             Image image = await context.photos.FirstOrDefaultAsync(x => x.Id == id);
@@ -31,9 +37,13 @@ namespace lamst_ma7ba_Api.Repository.ImageRepository
            await context.SaveChangesAsync();
         }
 
-        public async Task<IList<Image>> GetImages(int catid)
+        public async Task<IList<Image>> GetImages(int catid , int pageNumber)
         {
-            var images = await context.photos.OrderByDescending(x => x.Date).Where(x => x.ImageCatId == catid).ToListAsync();
+            if (pageNumber  == 0)
+            {
+                pageNumber = 1;
+            }
+            var images = await context.photos.OrderByDescending(x => x.Date).Where(x => x.ImageCatId == catid).paginage(pageNumber,6).ToListAsync();
             return images;
         }
 

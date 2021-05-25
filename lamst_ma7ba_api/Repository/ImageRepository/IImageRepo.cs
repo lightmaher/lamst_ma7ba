@@ -8,8 +8,9 @@ namespace lamst_ma7ba_Api.Repository.ImageRepository
 {
    public interface IImageRepo
     {
-        Task<IList<Image>> GetImages(int catid);
+        Task<IList<Image>> GetImages(int catid , int PageNumber);
         Task addimage(Image image);
         Task deleteimage(int id);
+        Task<int> count_images(int catid);
     }
 }
