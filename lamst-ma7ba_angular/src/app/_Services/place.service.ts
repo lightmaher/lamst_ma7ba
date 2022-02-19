@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Place } from '../_Models/place';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
     providedIn: 'root'
@@ -10,7 +11,7 @@ import { Observable } from 'rxjs';
 export class PlaceService{
     constructor(private http: HttpClient){}
 
-    baseUrl = 'https://localhost:44367/api/place/';
+    baseUrl = environment.baseUrl + 'api/place/';
     GetAllPlaces(): Observable<Place[]>{
         return this.http.get<Place[]>(this.baseUrl + 'GetAllPlaces');
     }

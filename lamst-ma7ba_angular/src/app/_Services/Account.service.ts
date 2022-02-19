@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map} from 'rxjs/operators';
 import {JwtHelperService} from '@auth0/angular-jwt';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import {JwtHelperService} from '@auth0/angular-jwt';
 export class AccountService {
 
 constructor( private http: HttpClient ) { }
-baseurl = 'https://localhost:44367/api/Account/';
+baseurl = environment.baseUrl + 'api/Account/';
 jwtHelper = new JwtHelperService();
 decotedToken: string;
 login(mod){

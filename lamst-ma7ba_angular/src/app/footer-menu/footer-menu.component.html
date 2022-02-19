@@ -6,11 +6,12 @@
           <p>نرحب بتواصلكم معنا</p>
           <div class="contact">
             <span><i class="fa fa-phone"> &nbsp;</i>تليفون : 01091046000</span>
-            <span><i class="fa fa-envelope"> &nbsp;</i>malakmamdouh@gmail.com</span>
+       
           </div>
           <div class="socials">
             <a href="https://www.facebook.com/Lamsetma7abawra7ma/" target="_blank"><i class="fab fa-facebook fa-2x text-primary"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
+            <i class="fab fa-whatsapp fa-3x mr-2" style="color: green;" ></i>
+
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>
           </div>
@@ -18,27 +19,13 @@
       <div class="footer-section links">
         <h2>فاعليات</h2>
        
-        <ul>
-          <a href="#"><li>زيارة مستشفي 57357</li></a>
-          <a href="#"><li>زيارة مستشفي القلب</li></a>
+        <ul *ngFor="let item of events">
+          <a routerLink="/events"><li>{{item.title}}</li></a>
         </ul>
       </div>
-      <div class="footer-section contact-us">
-        <h2>تواصل معنا</h2>
-          <!--<input type="email" name="email" class="form-control contact-input" 
-          placeholder="البريد الالكتروني...">-->
-          <textarea name="message" class="form-control contact-input" 
-          placeholder="رسالة..."></textarea>
-          <button class="btn btn-danger send-btn">
-            <i class="fa fa-envelope"></i>
-            ارسال
-          </button>
-        
-      </div>
+      
     </div>
   
-    <div class="footer-bottom">
-    <p style="color: #959595; font-size: 14px;">Designed By Nour</p>
-    </div>
+    
   </div>
 </div>

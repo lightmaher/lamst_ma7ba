@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable  } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment.prod';
 import { Evt } from '../_Models/Evt';
 import { Join } from '../_Models/join';
 
@@ -8,7 +9,7 @@ import { Join } from '../_Models/join';
   providedIn: 'root'
 })
 export class EventService {
-  baseurl = 'https://localhost:44367/api/Events/';
+  baseurl = environment.baseUrl + 'api/Events/';
   constructor( private http: HttpClient) { }
   getAllEvents(pn: number){
    return this.http.get(this.baseurl + '?pn=' + pn);

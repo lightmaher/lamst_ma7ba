@@ -16,7 +16,31 @@ p{
     margin: auto;
     padding-right: 40px;
     padding-left: 40px;
+
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 27px;
     color: #212529;
+    font-family:cairo ;
+}
+.card{
+    background-color: #F0F8FF;
+}
+h1{
+    font-family:cairo ;
+}
+h{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+mat-panel-title{
+   font-family: cairo;
+   font-size: large;
+}
+mat-card-title{
+    font-family: cairo;
+    font-size: xx-large;
+}
+a:hover{
+margin-bottom: 2px;
+color: red;
 }

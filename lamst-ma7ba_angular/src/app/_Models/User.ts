@@ -9,4 +9,5 @@ export interface User {
     url: string;
     reason: string;
     comment: string;
+    idNumber: string;
 }

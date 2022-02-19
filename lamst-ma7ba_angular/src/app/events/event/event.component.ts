@@ -43,7 +43,7 @@ joinform: FormGroup;
     this.form = true;
   }
   public createImgPath = (serverPath: string) => {
-    return `https://localhost:44367/${serverPath}`;
+    return `http://heart.somee.com/${serverPath}`;
   }
   delete(id: number){
     this.eventservice.deleteEvent(id).subscribe(res => {

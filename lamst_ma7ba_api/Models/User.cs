@@ -21,5 +21,6 @@ namespace lamst_ma7ba_Api.Models
         public string address { get; set; }
         public string Reason { get; set; }
         public string Comment { get; set; }
+        public string IdNumber { get; set; }
     }
 }

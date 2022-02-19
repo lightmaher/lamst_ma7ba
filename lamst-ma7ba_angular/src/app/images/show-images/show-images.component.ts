@@ -28,7 +28,7 @@ export class ShowImagesComponent implements OnInit {
   }
 
   public createImgPath = (serverPath: string) => {
-    return `https://localhost:44367/${serverPath}`;
+    return `http://heart.somee.com/${serverPath}`;
   }
   getimages(){
     this.ImageService.showimages(this.catid , this.p).subscribe((imgs: Image[]) => this.images = imgs);

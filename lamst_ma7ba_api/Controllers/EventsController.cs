@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using lamst_ma7ba_Api.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -24,6 +25,7 @@ namespace lamst_ma7ba_Api.Controllers
         [HttpGet]
         public async Task<ActionResult<IList<Event>>> get(int pn)
         {
+         
             IList<Event> evts = await _repEvent.GetAllEvents(pn);
             return Ok(evts);
         }
@@ -36,12 +38,16 @@ namespace lamst_ma7ba_Api.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Event>> getEvent(int id)
         {
+          
             var evt =  await _repEvent.GetEvent(id);
             return Ok(evt);
         }
         [HttpPost]
         public async Task<ActionResult> post(Event evt)
         {
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            var x = claim.Value;
             await _repEvent.AddEvent(evt);
             return StatusCode(202);
         }

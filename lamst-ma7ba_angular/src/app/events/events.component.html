@@ -9,7 +9,7 @@
        
             <div class="container" style="direction: rtl;">
 
-              <div class="row mr-4">
+              <div class="row m-2 justify-content-sm-center">
                 <app-event *ngFor="let item of events | paginate: {  itemsPerPage: 4,
                     currentPage: p , totalItems: count}" [evt]="item"></app-event>
               </div>

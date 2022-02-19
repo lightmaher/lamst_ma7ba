@@ -45,6 +45,11 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { AddImagecatComponent } from './images/add-imagecat/add-imagecat.component';
 import { ShowImagesComponent } from './images/show-images/show-images.component';
 import { FacebookComponent } from './facebook/facebook.component';
+import {MatTreeModule} from '@angular/material/tree';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { FacebookModule } from 'ngx-facebook';
+
+
 
 
 export function tokenGetter() {
@@ -85,6 +90,7 @@ export function tokenGetter() {
     FacebookComponent
    ],
   imports: [
+    FacebookModule.forRoot(),
     IvyCarouselModule,
     MatMomentDateModule,
     BrowserModule,
@@ -96,7 +102,8 @@ export function tokenGetter() {
       config: {
         // tslint:disable-next-line:object-literal-shorthand
         tokenGetter: tokenGetter,
-        allowedDomains: ['localhost:44367'],
+        allowedDomains: [ 'http://heart.somee.com/api/Events/' ,
+      'http://www.heart.somee.com/' ],
         disallowedRoutes: [''],
       },
     }),
@@ -108,7 +115,9 @@ export function tokenGetter() {
     MatNativeDateModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatTreeModule,
+    MatExpansionModule,
   ],
   providers: [
   ],

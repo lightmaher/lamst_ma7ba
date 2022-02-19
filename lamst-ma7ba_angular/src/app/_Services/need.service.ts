@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Need } from '../_Models/need';
@@ -8,8 +8,8 @@ import { Need } from '../_Models/need';
 })
 
 export class NeedService{
-    constructor(private http: HttpClient){};
-    baseUrl = 'https://localhost:44367/api/Need/';
+    constructor(private http: HttpClient){}
+    baseUrl = 'http://heart.somee.com/api/Need/';
     GetAllNeeds(): Observable<Need[]>{
         return this.http.get<Need[]>(this.baseUrl + 'GetAllNeeds');
     }

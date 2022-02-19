@@ -6,6 +6,7 @@ import { EventService } from 'src/app/_Services/event.service';
 import { Evt } from 'src/app/_Models/Evt';
 import { AccountService } from 'src/app/_Services/Account.service';
 import * as $ from 'jquery';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-place-detail',
@@ -50,7 +51,7 @@ export class PlaceDetailComponent implements OnInit {
   }
 
   public createImgPath = (server: string) => {
-    return `https://localhost:44367/${server}`;
+    return environment.baseUrl + `${server}`;
   }
 
   EditPlaceClick(id){

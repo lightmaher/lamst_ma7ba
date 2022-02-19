@@ -1,0 +1,156 @@
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\appsettings.Development.json
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\appsettings.json
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.exe
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.deps.json
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.runtimeconfig.json
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.runtimeconfig.dev.json
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.pdb
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Antlr3.Runtime.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Iesi.Collections.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.AspNetCore.JsonPatch.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.AspNetCore.Razor.Language.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Bcl.AsyncInterfaces.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Bcl.HashCode.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.CodeAnalysis.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.CodeAnalysis.CSharp.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.CodeAnalysis.Razor.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.CodeAnalysis.Workspaces.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Data.SqlClient.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Data.Sqlite.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.DotNet.PlatformAbstractions.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.EntityFrameworkCore.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.EntityFrameworkCore.Design.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.EntityFrameworkCore.Relational.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.EntityFrameworkCore.Sqlite.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Caching.Abstractions.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Caching.Memory.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Configuration.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Configuration.Binder.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Configuration.FileExtensions.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Configuration.Json.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.DependencyInjection.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.DependencyModel.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.FileProviders.Physical.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.FileSystemGlobbing.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Hosting.Abstractions.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Identity.Core.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Identity.Stores.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Logging.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Logging.Abstractions.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Options.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Extensions.Primitives.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.Identity.Client.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.IdentityModel.Logging.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.IdentityModel.Protocols.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.IdentityModel.Tokens.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.VisualStudio.Web.CodeGeneration.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\dotnet-aspnet-codegenerator-design.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Newtonsoft.Json.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Newtonsoft.Json.Bson.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\NHibernate.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\NuGet.Frameworks.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Remotion.Linq.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\Remotion.Linq.EagerFetching.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\SQLitePCLRaw.batteries_v2.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\SQLitePCLRaw.nativelibrary.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\SQLitePCLRaw.core.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\SQLitePCLRaw.provider.dynamic_cdecl.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.Collections.Immutable.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.Composition.AttributedModel.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.Composition.Convention.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.Composition.Hosting.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.Composition.Runtime.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.Composition.TypedParts.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.Configuration.ConfigurationManager.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.Diagnostics.DiagnosticSource.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.IdentityModel.Tokens.Jwt.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.Runtime.Caching.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.Security.Cryptography.ProtectedData.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\System.Text.Json.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\cs\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\de\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\es\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\fr\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\it\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ja\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ko\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\pl\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\pt-BR\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ru\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\tr\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\sni.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Release\netcoreapp3.1\win-x64\e_sqlite3.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.GeneratedMSBuildEditorConfig.editorconfig
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.AssemblyInfoInputs.cache
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.AssemblyInfo.cs
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.csproj.CoreCompileInputs.cache
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.MvcApplicationPartsAssemblyInfo.cache
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\staticwebassets\lamst-ma7ba Api.StaticWebAssets.Manifest.cache
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\staticwebassets\lamst-ma7ba Api.StaticWebAssets.xml
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\scopedcss\bundle\lamst-ma7ba Api.styles.css
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.RazorTargetAssemblyInfo.cache
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.csproj.CopyComplete
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.dll
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.pdb
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Release\netcoreapp3.1\win-x64\lamst-ma7ba Api.genruntimeconfig.cache

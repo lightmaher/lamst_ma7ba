@@ -1,5 +1,7 @@
+import { Route } from '@angular/compiler/src/core';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Imagecat } from 'src/app/_Models/imagecat';
 import { ImagecatService } from 'src/app/_Services/imagecat.service';
 
@@ -11,7 +13,7 @@ import { ImagecatService } from 'src/app/_Services/imagecat.service';
 export class AddImagecatComponent implements OnInit {
 
   form: FormGroup;
-  constructor(private imagecatservice: ImagecatService , private fb: FormBuilder) { }
+  constructor(private imagecatservice: ImagecatService , private fb: FormBuilder , private router: Router) { }
   imagecat: Imagecat;
   public response: {url: ''};
   ngOnInit(): void {
@@ -28,7 +30,8 @@ export class AddImagecatComponent implements OnInit {
    this.imagecat = Object.assign ( {}, this.form.value);
    this.imagecat.url = this.response.url;
    this.imagecatservice.addimagecat (this.imagecat).subscribe(
-     res => { console.log('done'); }
+     // tslint:disable-next-line:no-unused-expression
+     res => { this.router.navigate['/imagescategorey']; }
    );
  }
 }

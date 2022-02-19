@@ -32,6 +32,7 @@ namespace lamst_ma7ba_Api
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -57,7 +58,6 @@ namespace lamst_ma7ba_Api
             services.AddScoped<IContectUsRepoistory, ContactUsRepoistory>();
             services.AddScoped<INeedRepo,NeedRepo>();
             services.AddScoped<IUserRep, UserRep>();
-            services.AddCors();
             services.AddControllers();
             // for identity ->
             IdentityBuilder builder = services.AddIdentityCore<Admin>();
@@ -99,7 +99,11 @@ namespace lamst_ma7ba_Api
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            app.UseCors(x => x
+               .AllowAnyMethod()
+               .AllowAnyHeader()
+               .SetIsOriginAllowed(origin => true) // allow any origin
+               .AllowCredentials());
             // lazm nar3y el tartib
             app.UseAuthentication();
             app.UseAuthorization();
@@ -115,6 +119,7 @@ namespace lamst_ma7ba_Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapFallbackToController("index", "fallback");
             });
         }
     }

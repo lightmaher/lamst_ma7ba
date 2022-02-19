@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Evt } from '../_Models/Evt';
+import { EventService } from '../_Services/event.service';
 
 @Component({
   selector: 'app-footer-menu',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterMenuComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private eventsservice: EventService) { }
+  events: Evt[];
   ngOnInit(): void {
+    this.showlastevents();
   }
-
+  showlastevents(){
+    this.eventsservice.getAllEvents(1).subscribe( (res: Evt[]) => {
+         this.events = res;
+         this.events.splice(3, 2);
+         console.log(this.events);
+    });
+  }
 }

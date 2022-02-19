@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
 import { Evt } from '../_Models/Evt';
 import { Place } from '../_Models/place';
 import { HomeService } from '../_Services/home.service';
@@ -22,7 +23,7 @@ export class HomeComponent implements OnInit {
     this.homeservice.getPlaces().subscribe((res: []) => this.places = res);
   }
   public createImgPath = (server: string) => {
-    return `https://localhost:44367/${server}`;
+    return environment.baseUrl + `${server}`;
   }
 getEvenst(){
   this.homeservice.getEvents().subscribe((res: []) => this.events  = res );

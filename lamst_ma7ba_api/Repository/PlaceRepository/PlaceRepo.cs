@@ -17,7 +17,7 @@ namespace lamst_ma7ba_Api.Repository.PlaceRepository
         }
         public async Task<IList<Place>> getHomePlacesAsync()
         {
-            return await _context.places.Take(6).OrderBy(x => x.Title).ToListAsync();
+            return await _context.places.Take(6).ToListAsync();
         }
         public async Task<Place> AddPlaceAsync(Place model)
         {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { max } from 'moment';
 import { User } from 'src/app/_Models/User';
 import { AlretifyService } from 'src/app/_Services/alertify.service';
 import { UsersService } from 'src/app/_Services/users.service';
@@ -24,6 +25,7 @@ export class UserAddComponent implements OnInit {
     job: [ '', Validators.required],
     phoneNumber: [ '', Validators.required],
     reason: ['', Validators.required],
+    idNumber: ['' , Validators.required],
     comment: ['', Validators.required]
     });
   }

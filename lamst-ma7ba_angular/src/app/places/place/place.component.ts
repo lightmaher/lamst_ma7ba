@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PlaceService } from '../../_Services/place.service';
 import { Place } from '../../_Models/place';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-place',
@@ -17,6 +18,6 @@ export class PlaceComponent implements OnInit {
   }
 
   public createImgPath = (server: string) => {
-    return `https://localhost:44367/${server}`;
+    return  environment.baseUrl + `${server}`;
   }
 }

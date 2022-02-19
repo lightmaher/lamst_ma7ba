@@ -430,6 +430,9 @@ namespace lamst_ma7ba_Api.Migrations
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("IdNumber")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Job")
                         .HasColumnType("nvarchar(max)");
 
@@ -450,7 +453,7 @@ namespace lamst_ma7ba_Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("clints");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

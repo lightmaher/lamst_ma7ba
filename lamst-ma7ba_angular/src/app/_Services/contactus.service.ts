@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
 import { Contactus } from '../_Models/contactus';
 
 @Injectable({
@@ -8,7 +9,7 @@ import { Contactus } from '../_Models/contactus';
 export class ContactusService {
 
 constructor( private http: HttpClient) { }
-baseurl = 'https://localhost:44367/api/contactus/';
+baseurl = environment.baseUrl + 'api/contactus/';
 
 getAllMessages(){
   return this.http.get(this.baseurl);

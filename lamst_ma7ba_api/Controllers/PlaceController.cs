@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using lamst_ma7ba_Api.Models;
 using lamst_ma7ba_Api.Repository.PlaceRepository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,13 +26,9 @@ namespace lamst_ma7ba_Api.Controllers
         [HttpGet]
         [Route("GetAllPlaces")]
         public async Task<IEnumerable<Place>> GetAllPlaces()
-        {
-            var places =await _repo.GetAllPlacesAsync();
-            if (places != null)
-            {
-                return places;
-            }
-            return null;
+        { 
+            var places = await _repo.GetAllPlacesAsync();
+            return places;
         }
         [HttpGet]
         [Route("GetPlace/{id}")]
@@ -38,7 +36,7 @@ namespace lamst_ma7ba_Api.Controllers
         {
             var place = await _repo.GetPlaceAsync(id);
             if (place != null)
-                return place;
+            return place;
             return null;
         }
         [HttpPost]

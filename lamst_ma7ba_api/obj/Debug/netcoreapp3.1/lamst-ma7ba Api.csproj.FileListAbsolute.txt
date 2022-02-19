@@ -1283,17 +1283,14 @@ F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcorea
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csprojAssemblyReference.cache
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.GeneratedMSBuildEditorConfig.editorconfig
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.AssemblyInfoInputs.cache
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.AssemblyInfo.cs
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csproj.CoreCompileInputs.cache
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.MvcApplicationPartsAssemblyInfo.cache
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\staticwebassets\lamst-ma7ba Api.StaticWebAssets.Manifest.cache
-F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\staticwebassets\lamst-ma7ba Api.StaticWebAssets.xml
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\scopedcss\bundle\lamst-ma7ba Api.styles.css
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.RazorTargetAssemblyInfo.cache
-F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csproj.CopyComplete
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.dll
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.pdb
 F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.genruntimeconfig.cache
@@ -1819,3 +1816,6 @@ C:\Users\nourmaher\Desktop\lamst_m7aba-malak\lamst_ma7ba_api\obj\Debug\netcoreap
 C:\Users\nourmaher\Desktop\lamst_m7aba-malak\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.dll
 C:\Users\nourmaher\Desktop\lamst_m7aba-malak\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.pdb
 C:\Users\nourmaher\Desktop\lamst_m7aba-malak\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.genruntimeconfig.cache
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csproj.AssemblyReference.cache
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\staticwebassets\lamst-ma7ba Api.StaticWebAssets.xml
+F:\web developer\Heart_Foundation\lamst_ma7ba\lamst_ma7ba_api\obj\Debug\netcoreapp3.1\lamst-ma7ba Api.csproj.CopyComplete

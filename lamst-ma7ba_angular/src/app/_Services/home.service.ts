@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HomeService {
- baseurl = 'https://localhost:44367/api/home/';
+ baseurl = environment.baseUrl + 'api/home/';
 constructor(private http: HttpClient) { }
 getEvents(){
   return this.http.get(this.baseurl + 'events');

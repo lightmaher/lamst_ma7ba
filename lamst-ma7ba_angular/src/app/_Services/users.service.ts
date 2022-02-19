@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { ReturnStatement } from '@angular/compiler';
 import { Injectable } from '@angular/core';
+import { env } from 'process';
+import { environment } from 'src/environments/environment.prod';
 import { User } from '../_Models/User';
 
 @Injectable({
@@ -9,7 +11,7 @@ import { User } from '../_Models/User';
 export class UsersService {
 
 constructor( private http: HttpClient) { }
-baseurl = 'https://localhost:44367/api/User/';
+baseurl = environment.baseUrl + 'api/User/';
 showusers(){
   return this.http.get(this.baseurl);
 }

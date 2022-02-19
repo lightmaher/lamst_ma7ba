@@ -1,11 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
 import {Image} from '../_Models/image';
 @Injectable({
   providedIn: 'root'
 })
 export class ImageService {
-baseurl = 'https://localhost:44367/api/Image/';
+baseurl = environment.baseUrl + 'api/Image/';
   constructor(private http: HttpClient) { }
   showimages( catid: number , pn: number){
     return this.http.get(this.baseurl + '?catid=' + catid + '&pn=' + pn );

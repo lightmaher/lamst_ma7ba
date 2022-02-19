@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient, HttpEventType } from '@angular/common/http';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-upload-place',
@@ -10,7 +11,7 @@ import { HttpClient, HttpEventType } from '@angular/common/http';
 export class UploadPlaceComponent implements OnInit {
 
   uploadForm: FormGroup;
-  baseUrl = 'https://localhost:44367/api/place/UploadGallery';
+  baseUrl = environment.baseUrl + 'api/place/UploadGallery';
   public progress: number;
   myFiles: string[] = [];
   // tslint:disable-next-line: no-output-on-prefix

@@ -16,7 +16,7 @@ export class NeedsComponent implements OnInit {
               private accountservice: AccountService,
     // tslint:disable-next-line:align
     private neddService: NeedService) { }
-
+    panelOpenState = false;
   ngOnInit(): void {
     this.getNeeds();
   }
