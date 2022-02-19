@@ -1,1 +1,1 @@
-node_modules
+lamst-ma7ba_angular/node_modules
